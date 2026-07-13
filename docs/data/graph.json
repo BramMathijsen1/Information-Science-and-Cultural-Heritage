@@ -1,0 +1,406 @@
+{
+  "generated_at": "2026-07-13T03:54:22+00:00",
+  "counts": {
+    "entities": 18,
+    "relations": 27
+  },
+  "subject": {
+    "id": "hattori_hanzo",
+    "qid": "Q316952",
+    "uri": "http://www.wikidata.org/entity/Q316952",
+    "label": "Hattori Hanzō",
+    "type": "Person",
+    "type_qname": "crm:E21_Person",
+    "descriptions": [
+      "Commanded the shogunate's yoriki officers and 200 civil officials after Ieyasu's move to the Kantō region.",
+      "Retired as a Buddhist monk and founded Sainen-ji temple in Edo (now Shinjuku Tokyo) where he is buried."
+    ],
+    "is_extra": false
+  },
+  "entities": [
+    {
+      "id": "bansenshukai",
+      "qid": "Q806956",
+      "uri": "http://www.wikidata.org/entity/Q806956",
+      "label": "Bansenshūkai",
+      "type": "edm:ProvidedCHO",
+      "type_qname": "edm:ProvidedCHO",
+      "descriptions": [
+        "Compiled in 1676, after the Sengoku-period height of ninja activity had passed and during a long peace under Tokugawa rule; its compiler was not a contemporary of the practices it records but drew on earlier oral and written tradition.",
+        "Survives in two main manuscript traditions: a Kōga version (22 chapters in 10+1 volumes) and an Iga version (22 chapters in 12+4 volumes).",
+        "Translated into English as \"The Book of Ninja\" by Antony Cummins and Yoshie Minami (2013)."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "ghost_tsushima",
+      "qid": "Q42564798",
+      "uri": "http://www.wikidata.org/entity/Q42564798",
+      "label": "Ghost of Tsushima",
+      "type": "Video Game",
+      "type_qname": "schema:VideoGame",
+      "descriptions": [],
+      "is_extra": false
+    },
+    {
+      "id": "iga_province",
+      "qid": "Q1047128",
+      "uri": "http://www.wikidata.org/entity/Q1047128",
+      "label": "Iga Province",
+      "type": "Place",
+      "type_qname": "schema:Place",
+      "descriptions": [
+        "Divided into 4 districts (郡) with about 197 villages before its abolition."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "iga_ryu",
+      "qid": "Q3275530",
+      "uri": "http://www.wikidata.org/entity/Q3275530",
+      "label": "Iga-ryū",
+      "type": "Organization / School",
+      "type_qname": "crm:E74_Group",
+      "descriptions": [
+        "Historically associated above all with the Hattori clan and the Fujibayashi clan."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "kunai",
+      "qid": "Q860340",
+      "uri": "http://www.wikidata.org/entity/Q860340",
+      "label": "Kunai",
+      "type": "Object",
+      "type_qname": "crm:E22_Human-Made_Object",
+      "descriptions": [
+        "Originally a stabbing/thrusting tool rather than a throwing weapon; the \"thrown ninja knife\" image comes from modern fiction."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "mizugumo",
+      "qid": "Q6884757",
+      "uri": "http://www.wikidata.org/entity/Q6884757",
+      "label": "Mizugumo",
+      "type": "Object",
+      "type_qname": "crm:E22_Human-Made_Object",
+      "descriptions": [
+        "Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear.",
+        "Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "ninja",
+      "qid": "Q9402",
+      "uri": "http://www.wikidata.org/entity/Q9402",
+      "label": "Ninja",
+      "type": "Concept",
+      "type_qname": "skos:Concept",
+      "descriptions": [
+        "Defined more by skillset and function than by social rank or class; the identity could be adopted situationally rather than marking a fixed separate caste, and historical samurai are recorded taking on ninja roles."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "ninja_museum",
+      "qid": "Q4306401",
+      "uri": "http://www.wikidata.org/entity/Q4306401",
+      "label": "Ninja Museum of Igaryu",
+      "type": "Museum",
+      "type_qname": "schema:Museum",
+      "descriptions": [
+        "Located near Iga Ueno Castle; includes a model ninja village open to tours."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "ninjutsu",
+      "qid": "Q539067",
+      "uri": "http://www.wikidata.org/entity/Q539067",
+      "label": "Ninjutsu",
+      "type": "Concept",
+      "type_qname": "skos:Concept",
+      "descriptions": [
+        "Not a single unified martial art but a collective term for numerous distinct schools (ryūha), often family-based, whose techniques were historically transmitted primarily through oral instruction rather than a standardized curriculum."
+      ],
+      "is_extra": false
+    },
+    {
+      "id": "kaminogo_siege",
+      "qid": "Q7510141",
+      "uri": "http://www.wikidata.org/entity/Q7510141",
+      "label": "Siege of Kaminogō Castle",
+      "type": "Event",
+      "type_qname": "schema:Event",
+      "descriptions": [
+        "Matsudaira Motoyasu's forces took hostages to trade for his own family then held by the Imagawa clan."
+      ],
+      "is_extra": false
+    }
+  ],
+  "extra_entities": [
+    {
+      "id": "hattori_masanari",
+      "qid": "Q4432157",
+      "uri": "http://www.wikidata.org/entity/Q4432157",
+      "label": "Hattori Masanari",
+      "type": "Person",
+      "type_qname": "crm:E21_Person",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "kaminogo_castle",
+      "qid": "Q11358375",
+      "uri": "http://www.wikidata.org/entity/Q11358375",
+      "label": "Kaminogō Castle",
+      "type": "Place",
+      "type_qname": "schema:Place",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "mie_prefecture",
+      "qid": "Q128196",
+      "uri": "http://www.wikidata.org/entity/Q128196",
+      "label": "Mie Prefecture",
+      "type": "Place",
+      "type_qname": "schema:Place",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "mikawa_province",
+      "qid": "Q768158",
+      "uri": "http://www.wikidata.org/entity/Q768158",
+      "label": "Mikawa Province",
+      "type": "Place",
+      "type_qname": "schema:Place",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "sucker_punch",
+      "qid": "Q916714",
+      "uri": "http://www.wikidata.org/entity/Q916714",
+      "label": "Sucker Punch Productions",
+      "type": "Organization / School",
+      "type_qname": "crm:E74_Group",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "tokugawa_ieyasu",
+      "qid": "Q171977",
+      "uri": "http://www.wikidata.org/entity/Q171977",
+      "label": "Tokugawa Ieyasu",
+      "type": "Person",
+      "type_qname": "crm:E21_Person",
+      "descriptions": [],
+      "is_extra": true
+    },
+    {
+      "id": "udono_nagateru",
+      "qid": "Q4352873",
+      "uri": "http://www.wikidata.org/entity/Q4352873",
+      "label": "Udono Nagateru",
+      "type": "Person",
+      "type_qname": "crm:E21_Person",
+      "descriptions": [],
+      "is_extra": true
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bansenshukai",
+      "subject_label": "Bansenshūkai",
+      "predicate": "dct:subject",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "ghost_tsushima",
+      "subject_label": "Ghost of Tsushima",
+      "predicate": "dct:subject",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "ghost_tsushima",
+      "subject_label": "Ghost of Tsushima",
+      "predicate": "foaf:depicts",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "ghost_tsushima",
+      "subject_label": "Ghost of Tsushima",
+      "predicate": "foaf:maker",
+      "object": "sucker_punch",
+      "object_label": "Sucker Punch Productions"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "crm:P107i_is_current_or_former_member_of",
+      "object": "iga_ryu",
+      "object_label": "Iga-ryū"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "dct:isReplacedBy",
+      "object": "hattori_masanari",
+      "object_label": "Hattori Masanari"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "ninja:embodiesArchetype",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "ninja:isVassalOf",
+      "object": "tokugawa_ieyasu",
+      "object_label": "Tokugawa Ieyasu"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "schema:birthPlace",
+      "object": "mikawa_province",
+      "object_label": "Mikawa Province"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "schema:homeLocation",
+      "object": "iga_province",
+      "object_label": "Iga Province"
+    },
+    {
+      "subject": "hattori_hanzo",
+      "subject_label": "Hattori Hanzō",
+      "predicate": "schema:knowsAbout",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "iga_province",
+      "subject_label": "Iga Province",
+      "predicate": "dct:isReplacedBy",
+      "object": "mie_prefecture",
+      "object_label": "Mie Prefecture"
+    },
+    {
+      "subject": "iga_ryu",
+      "subject_label": "Iga-ryū",
+      "predicate": "dct:spatial",
+      "object": "iga_province",
+      "object_label": "Iga Province"
+    },
+    {
+      "subject": "iga_ryu",
+      "subject_label": "Iga-ryū",
+      "predicate": "schema:knowsAbout",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "kaminogo_castle",
+      "subject_label": "Kaminogō Castle",
+      "predicate": "dct:spatial",
+      "object": "mikawa_province",
+      "object_label": "Mikawa Province"
+    },
+    {
+      "subject": "kunai",
+      "subject_label": "Kunai",
+      "predicate": "dct:relation",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "mizugumo",
+      "subject_label": "Mizugumo",
+      "predicate": "dct:relation",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "mizugumo",
+      "subject_label": "Mizugumo",
+      "predicate": "dct:relation",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "ninja",
+      "subject_label": "Ninja",
+      "predicate": "skos:related",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "ninja_museum",
+      "subject_label": "Ninja Museum of Igaryu",
+      "predicate": "dct:relation",
+      "object": "kunai",
+      "object_label": "Kunai"
+    },
+    {
+      "subject": "ninja_museum",
+      "subject_label": "Ninja Museum of Igaryu",
+      "predicate": "dct:spatial",
+      "object": "iga_province",
+      "object_label": "Iga Province"
+    },
+    {
+      "subject": "ninja_museum",
+      "subject_label": "Ninja Museum of Igaryu",
+      "predicate": "dct:subject",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "kaminogo_siege",
+      "subject_label": "Siege of Kaminogō Castle",
+      "predicate": "crm:P11_had_participant",
+      "object": "hattori_hanzo",
+      "object_label": "Hattori Hanzō"
+    },
+    {
+      "subject": "kaminogo_siege",
+      "subject_label": "Siege of Kaminogō Castle",
+      "predicate": "crm:P11_had_participant",
+      "object": "tokugawa_ieyasu",
+      "object_label": "Tokugawa Ieyasu"
+    },
+    {
+      "subject": "kaminogo_siege",
+      "subject_label": "Siege of Kaminogō Castle",
+      "predicate": "crm:P11_had_participant",
+      "object": "udono_nagateru",
+      "object_label": "Udono Nagateru"
+    },
+    {
+      "subject": "kaminogo_siege",
+      "subject_label": "Siege of Kaminogō Castle",
+      "predicate": "dct:relation",
+      "object": "ninjutsu",
+      "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "kaminogo_siege",
+      "subject_label": "Siege of Kaminogō Castle",
+      "predicate": "dct:spatial",
+      "object": "kaminogo_castle",
+      "object_label": "Kaminogō Castle"
+    }
+  ]
+}

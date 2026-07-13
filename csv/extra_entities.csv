@@ -1,0 +1,42 @@
+subject,predicate,object
+tokugawa_ieyasu,has wikidata id,Q171977
+tokugawa_ieyasu,has type,person
+tokugawa_ieyasu,has title,Tokugawa Ieyasu
+sucker_punch,has wikidata id,Q916714
+sucker_punch,has type,organization
+sucker_punch,has title,Sucker Punch Productions
+kaminogo_castle,has wikidata id,Q11358375
+kaminogo_castle,has type,castle
+kaminogo_castle,has title,Kaminogō Castle
+kaminogo_castle,location,mikawa_province
+mikawa_province,has wikidata id,Q768158
+mikawa_province,has type,province
+mikawa_province,has title,Mikawa Province
+udono_nagateru,has wikidata id,Q4352873
+udono_nagateru,has type,person
+udono_nagateru,has title,Udono Nagateru
+mie_prefecture,has wikidata id,Q128196
+mie_prefecture,has type,prefecture
+mie_prefecture,has title,Mie Prefecture
+hattori_masanari,has wikidata id,Q4432157
+hattori_masanari,has type,person
+hattori_masanari,has title,Hattori Masanari
+#
+# === Conceptual model — extra (bridge) entities ===
+# Entities referenced by other entities' CSV files (had_participant, is
+# retainer of, has developer, location, is succeeded by...) but never
+# themselves mentioned in the TEI body text, so each is defined once here
+# instead of getting a full TEI record.
+#
+# has wikidata id -> (not a triple; consumed once to resolve this entity's
+#                     id to its Wikidata URI, same role as <idno type=
+#                     "Wikidata"> in the TEI)
+# tokugawa_ieyasu  has type person      -> class: crm:E21_Person (+ foaf:Person)
+# sucker_punch     has type organization -> class: crm:E74_Group (+ foaf:Organization)
+# kaminogo_castle  has type castle       -> class: schema:Place
+# mikawa_province  has type province     -> class: schema:Place
+# udono_nagateru   has type person       -> class: crm:E21_Person (+ foaf:Person)
+# mie_prefecture   has type prefecture   -> class: schema:Place
+# hattori_masanari has type person       -> class: crm:E21_Person (+ foaf:Person)
+# has title -> schema:name   (each)                  -> Literal
+# location  -> dct:spatial   schema:Place -> schema:Place

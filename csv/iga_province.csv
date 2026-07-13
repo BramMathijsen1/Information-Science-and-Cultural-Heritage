@@ -1,0 +1,15 @@
+subject,predicate,object
+iga_province,has type,region
+iga_province,has title,Iga Province
+iga_province,has note,Divided into 4 districts (郡) with about 197 villages before its abolition.
+iga_province,has date,1871
+iga_province,is succeeded by,mie_prefecture
+#
+# === Conceptual model — iga_province = schema:Place ===
+# has type        -> rdf:type          (class: schema:Place)
+# has title       -> schema:name       schema:Place -> Literal
+# has note        -> dct:description   schema:Place -> Literal
+# has date        -> dct:date          schema:Place -> xsd:gYear
+#   (here: the province's abolition year during the 1871 han-to-prefecture
+#    reform, not a founding date)
+# is succeeded by -> dct:isReplacedBy  schema:Place -> schema:Place

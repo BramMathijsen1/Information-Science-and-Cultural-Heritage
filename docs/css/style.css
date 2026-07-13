@@ -1,0 +1,407 @@
+/* Dark, high-contrast design: charcoal background, crimson accent. */
+
+:root {
+  --bg: #0a0a0d;
+  --bg-alt: #131318;
+  --card: #17171d;
+  --card-hover: #1d1d25;
+  --border: #2a2a33;
+  --text: #e9e7e2;
+  --muted: #928f97;
+  --accent: #d81e3f;
+  --accent-soft: rgba(216, 30, 63, 0.16);
+  --gold: #c9a860;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+code, .mono {
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+}
+
+a { color: var(--gold); }
+a:hover { color: var(--accent); }
+
+/* ---- Sticky status bar ---- */
+.statusbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+  background: rgba(10, 10, 13, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.statusbar strong { color: var(--text); }
+
+.statusbar .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 6px;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* ---- Hero ---- */
+.hero {
+  position: relative;
+  padding: 96px 24px 64px;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+  content: "忍";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46rem;
+  font-weight: 700;
+  color: rgba(216, 30, 63, 0.05);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero h1 {
+  position: relative;
+  margin: 0 0 6px;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.hero h1 span { color: var(--accent); }
+
+.hero .tagline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.hero .jp {
+  position: relative;
+  margin-top: 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+/* ---- Section shell ---- */
+section.block {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+section.block:last-of-type { border-bottom: none; }
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+h2.title {
+  margin: 0 0 28px;
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-left: 4px solid var(--accent);
+  padding-left: 14px;
+}
+
+.lede {
+  max-width: 760px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+/* ---- About / intro text ---- */
+.about-text {
+  max-width: 760px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.about-text p { margin: 0 0 14px; }
+.about-text p:last-child { margin-bottom: 0; }
+
+.about-text.placeholder {
+  border: 1px dashed var(--border);
+  background: var(--bg-alt);
+  padding: 18px 20px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---- Static diagrams ----
+   Wider column than the rest of the page: source canvases are large
+   (2500-3200px+), and a narrow column shrinks their text unreadably. */
+section.block#section-theoretical,
+section.block#section-conceptual,
+section.block#section-rdf-graph {
+  max-width: 1440px;
+}
+
+.diagram-wrap {
+  border: 1px solid var(--border);
+  background: #fbfaf7;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.diagram-wrap.dark {
+  background: #0d0d10;
+  border-color: #c9a860;
+}
+
+.diagram-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 900px;
+}
+
+/* Graphviz's own layout (ldf.fi), 5000pt+ wide — show at native size
+   and scroll both axes instead of shrinking its labels unreadable. */
+.diagram-wrap.native {
+  max-height: 720px;
+  overflow-y: auto;
+}
+
+.diagram-wrap.native img {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+}
+
+/* ---- Subject card ---- */
+.subject-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 28px;
+}
+
+.subject-card .badge {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  font-size: 2.4rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.subject-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.subject-card .type-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 2px 8px;
+  margin-bottom: 12px;
+}
+
+.subject-card p { margin: 8px 0; color: var(--text); }
+.subject-card .qid a { font-size: 0.85rem; }
+
+/* ---- Entity grid ---- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.filters button {
+  font: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.filters button:hover { color: var(--text); border-color: var(--gold); }
+
+.filters button.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.entity-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.entity-card:hover {
+  background: var(--card-hover);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.entity-card .type-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.entity-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.entity-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.entity-card a { font-size: 0.8rem; }
+
+/* ---- Bridge entities list ---- */
+.bridge-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.bridge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.bridge-item .type-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
+/* ---- Source code blocks ---- */
+.code-heading {
+  margin: 32px 0 12px;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.code-heading:first-of-type { margin-top: 0; }
+
+.code-block {
+  margin: 0;
+  max-height: 480px;
+  overflow: auto;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  padding: 16px 20px;
+}
+
+.code-block code {
+  display: block;
+  white-space: pre;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: none;
+}
+
+/* ---- Footer ---- */
+footer {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer .stats {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+}
+
+footer .stats strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+@media (max-width: 640px) {
+  .subject-card { grid-template-columns: 1fr; }
+}

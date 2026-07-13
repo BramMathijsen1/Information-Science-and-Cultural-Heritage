@@ -1,0 +1,486 @@
+<mxfile host="65bd71144e">
+    <diagram name="Theoretical Model" id="ninja-theoretical-1">
+        <mxGraphModel dx="1192" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4600" pageHeight="4600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="hattori_hanzo" value="Hattori Hanzō" style="rounded=1;html=1;fillColor=#8b1030;strokeColor=#c9a860;fontColor=#f5ede0;fontStyle=1;fontSize=34;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#d81e3f;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1787" y="1818" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="lit_hattori_hanzo_0" value="鬼の半蔵" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1876" y="2062" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="lit_hattori_hanzo_1" value="1542" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1930" y="1543" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="lit_hattori_hanzo_2" value="1597" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2092" y="1705" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_hattori_hanzo" value="Wikidata Q316952&lt;br&gt;VIAF 257979857&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1817" y="1396" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="bansenshukai" value="Bansenshūkai" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1770" y="1225" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="bansenshukai_type" value="book" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1748" y="953" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="bansenshukai_lit0" value="Fujibayashi&lt;br&gt;Yasutake" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1576" y="1051" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="bansenshukai_lit1" value="万川集海" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2044" y="1051" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="bansenshukai_auth" value="Wikidata Q806956&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1898" y="853" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_ryu" value="Iga-ryū" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2134" y="1343" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_ryu_type" value="school" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2527" y="1154" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_ryu_lit0" value="1487" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2149" y="1180" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_ryu_lit1" value="伊賀流" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2480" y="1345" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_ryu_auth" value="Wikidata Q3275530&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2439" y="1035" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_province" value="Iga Province" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2360" y="1653" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_province_type" value="region" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2896" y="1610" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_province_lit0" value="1871" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2766" y="1525" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="iga_province_auth" value="Wikidata Q1047128&lt;br&gt;GeoNames 11468270&lt;br&gt;VIAF 252317211&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2773" y="1372" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_museum" value="Ninja Museum&lt;br&gt;of Igaryu" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2383" y="2084" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_museum_type" value="museum" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2824" y="2194" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_museum_lit0" value="1964" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2659" y="1898" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_museum_lit1" value="伊賀流忍者博物館" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2515" y="2343" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_museum_auth" value="Wikidata Q4306401&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2856" y="2018" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="kunai" value="Kunai" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2123" y="2291" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="kunai_type" value="object" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2346" y="2675" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kunai_lit0" value="soft iron" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2527" y="2441" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="kunai_lit1" value="20-30 cm" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2101" y="2667" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="kunai_auth" value="Wikidata Q860340&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2491" y="2575" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima" value="Ghost of&lt;br&gt;Tsushima" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1770" y="2465" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima_type" value="video game" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1917" y="2794" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima_lit0" value="2020" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1892" y="2320" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima_lit1" value="action-adventure" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1687" y="2671" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima_lit2" value="Sony Interactive&lt;br&gt;Entertainment" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1464" y="2645" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ghost_tsushima_auth" value="Wikidata Q42564798&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1778" y="2942" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja" value="Ninja" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1491" y="2228" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_type" value="concept" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1191" y="2445" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninja_auth" value="Wikidata Q9402&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1176" y="2613" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="mizugumo" value="Mizugumo" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1083" y="1927" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="mizugumo_type" value="object" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1032" y="2230" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mizugumo_lit0" value="水蜘蛛" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1235" y="2230" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="mizugumo_auth" value="Wikidata Q6884757&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="812" y="2086" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninjutsu" value="Ninjutsu" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1195" y="1717" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninjutsu_type" value="concept" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="877" y="1622" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninjutsu_lit0" value="忍術" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="1520" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="ninjutsu_auth" value="Wikidata Q539067&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="1822" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_siege" value="Siege of&lt;br&gt;Kaminogō Castle" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1478" y="1264" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_siege_type" value="event" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="1049" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_siege_lit0" value="1562" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1182" y="1188" width="180" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_siege_auth" value="Wikidata Q7510141&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="869" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="hattori_masanari" value="Hattori Masanari" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2219" y="1827" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="hattori_masanari_type" value="person" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2072" y="2062" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="hattori_masanari_auth" value="Wikidata Q4432157" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2266" y="1988" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="tokugawa_ieyasu" value="Tokugawa Ieyasu" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1005" y="1363" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="tokugawa_ieyasu_type" value="person" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="756" y="1197" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="tokugawa_ieyasu_auth" value="Wikidata Q171977" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="562" y="1409" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="mikawa_province" value="Mikawa Province" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="824" y="985" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="mikawa_province_type" value="province" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="577" y="746" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mikawa_province_auth" value="Wikidata Q768158" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="472" y="1029" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_castle" value="Kaminogō Castle" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="616" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_castle_type" value="castle" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="727" y="664" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kaminogo_castle_auth" value="Wikidata Q11358375" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="638" y="512" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="udono_nagateru" value="Udono Nagateru" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="1356" y="850" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="udono_nagateru_type" value="person" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1633" y="599" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="udono_nagateru_auth" value="Wikidata Q4352873" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1268" y="632" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="mie_prefecture" value="Mie Prefecture" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2861" y="1749" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="mie_prefecture_type" value="prefecture" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="3179" y="1614" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mie_prefecture_auth" value="Wikidata Q128196" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="3085" y="1877" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="sucker_punch" value="Sucker Punch&lt;br&gt;Productions" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="2114" y="2835" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="sucker_punch_type" value="organization" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2325" y="3100" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sucker_punch_auth" value="Wikidata Q916714" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2021" y="3055" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="legbox" value="" style="rounded=1;html=1;fillColor=#141414;strokeColor=#c9a860;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="460" height="555" as="geometry"/>
+                </mxCell>
+                <mxCell id="legt" value="Theoretical Model — The Ninja Legend of Hattori Hanzō" style="text;html=1;fontStyle=1;fontSize=22;align=left;fontColor=#eee6d0;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="55" width="420" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg0" value="Subject (center)" style="rounded=1;html=1;fillColor=#8b1030;strokeColor=#c9a860;fontColor=#f5ede0;fontStyle=1;fontSize=34;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#d81e3f;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="120" width="400" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg1" value="Items (17 entities)" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="195" width="400" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg2" value="Entity type" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="270" width="400" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg3" value="Literals (values)" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="340" width="400" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg4" value="Authority control (Wikidata,&lt;br&gt;VIAF, GeoNames, DBpedia)" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="410" width="400" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_lit_hattori_hanzo_0" value="has nickname" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="hattori_hanzo" target="lit_hattori_hanzo_0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_lit_hattori_hanzo_1" value="has birth date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="hattori_hanzo" target="lit_hattori_hanzo_1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_lit_hattori_hanzo_2" value="has death date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="hattori_hanzo" target="lit_hattori_hanzo_2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_auth_hattori_hanzo" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="hattori_hanzo" target="auth_hattori_hanzo" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="bansenshukai" target="bansenshukai_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="has author" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="bansenshukai" target="bansenshukai_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="written as" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="bansenshukai" target="bansenshukai_lit1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="bansenshukai" target="bansenshukai_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="iga_ryu" target="iga_ryu_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="has date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="iga_ryu" target="iga_ryu_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="written as" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="iga_ryu" target="iga_ryu_lit1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="iga_ryu" target="iga_ryu_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="iga_province" target="iga_province_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="has date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="iga_province" target="iga_province_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="iga_province" target="iga_province_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="ninja_museum" target="ninja_museum_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" value="has foundation date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ninja_museum" target="ninja_museum_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e14" value="written as" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ninja_museum" target="ninja_museum_lit1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="ninja_museum" target="ninja_museum_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="kunai" target="kunai_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" value="has material" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="kunai" target="kunai_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e18" value="has length" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="kunai" target="kunai_lit1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e19" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="kunai" target="kunai_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e20" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="ghost_tsushima" target="ghost_tsushima_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e21" value="has release date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ghost_tsushima" target="ghost_tsushima_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e22" value="has genre" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ghost_tsushima" target="ghost_tsushima_lit1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e23" value="has publisher" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ghost_tsushima" target="ghost_tsushima_lit2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e24" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="ghost_tsushima" target="ghost_tsushima_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e25" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="ninja" target="ninja_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e26" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="ninja" target="ninja_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e27" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="mizugumo" target="mizugumo_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e28" value="written as" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="mizugumo" target="mizugumo_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e29" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="mizugumo" target="mizugumo_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e30" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="ninjutsu" target="ninjutsu_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e31" value="written as" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="ninjutsu" target="ninjutsu_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e32" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="ninjutsu" target="ninjutsu_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e33" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="kaminogo_siege" target="kaminogo_siege_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e34" value="has date" style="endArrow=open;html=1;rounded=1;strokeColor=#c9a860;fontSize=20;fontColor=#f0d9a0;labelBackgroundColor=none;strokeWidth=6;fontStyle=1;" parent="1" source="kaminogo_siege" target="kaminogo_siege_lit0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e35" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="kaminogo_siege" target="kaminogo_siege_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e36" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="hattori_masanari" target="hattori_masanari_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e37" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="hattori_masanari" target="hattori_masanari_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e38" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="tokugawa_ieyasu" target="tokugawa_ieyasu_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e39" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="tokugawa_ieyasu" target="tokugawa_ieyasu_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e40" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="mikawa_province" target="mikawa_province_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e41" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="mikawa_province" target="mikawa_province_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e42" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="kaminogo_castle" target="kaminogo_castle_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e43" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="kaminogo_castle" target="kaminogo_castle_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e44" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="udono_nagateru" target="udono_nagateru_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e45" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="udono_nagateru" target="udono_nagateru_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e46" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="mie_prefecture" target="mie_prefecture_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e47" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="mie_prefecture" target="mie_prefecture_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e48" value="has type" style="endArrow=open;html=1;rounded=1;strokeColor=#a8324a;fontSize=22;fontColor=#e8b8c2;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;" parent="1" source="sucker_punch" target="sucker_punch_type" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e49" value="authority control" style="endArrow=open;html=1;rounded=1;strokeColor=#5a92b0;fontSize=18;fontColor=#bcdcec;labelBackgroundColor=none;strokeWidth=5;fontStyle=1;dashed=1;" parent="1" source="sucker_punch" target="sucker_punch_auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e50" value="member of" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="iga_ryu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e51" value="embodies" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="ninja" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e52" value="born in" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="iga_province" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e53" value="practices" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e54" value="originates in" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="iga_ryu" target="iga_province" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e55" value="teaches" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="iga_ryu" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e56" value="documents" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="bansenshukai" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e57" value="location" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ninja_museum" target="iga_province" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e58" value="about" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ninja_museum" target="ninja" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e59" value="displays" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ninja_museum" target="kunai" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e60" value="used by" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="mizugumo" target="ninja" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e61" value="depicts" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ghost_tsushima" target="ninja" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e62" value="" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ghost_tsushima" target="ninja" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e63" value="had participant" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="hattori_hanzo" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e64" value="demonstrates" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e65" value="Is vassal of" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="tokugawa_ieyasu" edge="1">
+                    <mxGeometry x="0.0026" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e66" value="is succeeded by" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="hattori_masanari" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e67" value="was born in" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="hattori_hanzo" target="mikawa_province" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e68" value="had participant" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="tokugawa_ieyasu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e69" value="had participant" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="udono_nagateru" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e70" value="location" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="kaminogo_castle" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e71" value="location" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_castle" target="mikawa_province" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e72" value="is succeeded by" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="iga_province" target="mie_prefecture" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e73" value="has developer" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ghost_tsushima" target="sucker_punch" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e74" value="relates to" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="ninja" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e75" value="is used in" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="mizugumo" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e76" value="is used in" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kunai" target="ninjutsu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

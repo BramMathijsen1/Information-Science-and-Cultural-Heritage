@@ -1,0 +1,10 @@
+subject,predicate,object
+ninja,has type,concept
+ninja,has title,Ninja
+ninja,relates to,ninjutsu
+ninja,has note,"Defined more by skillset and function than by social rank or class; the identity could be adopted situationally rather than marking a fixed separate caste, and historical samurai are recorded taking on ninja roles."
+#
+# === Conceptual model — ninja = skos:Concept ===
+# has type   -> rdf:type      (class: skos:Concept)
+# has title  -> schema:name   skos:Concept -> Literal
+# relates to -> skos:related  skos:Concept -> skos:Concept

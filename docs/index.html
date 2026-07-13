@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of the Shadows: Hattori Hanzō in Cultural Heritage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="statusbar">
+    <span><span class="dot"></span><strong>Out of the Shadows</strong>, a Linked Open Data graph</span>
+    <span id="statusbar-meta">loading graph data…</span>
+  </div>
+
+  <header class="hero">
+    <h1><span>忍</span> Out of the Shadows</h1>
+    <p class="tagline">
+      How Hattori Hanzō, a real Sengoku-era retainer, became the ninja legend,
+      traced through the places, tools, texts and modern media that keep
+      pointing back to him.
+    </p>
+    <p class="jp">服部半蔵 &middot; 伊賀 &middot; 忍術</p>
+  </header>
+
+  <section class="block" id="section-about">
+    <p class="eyebrow">About</p>
+    <h2 class="title">About This Project</h2>
+    <div class="about-text">
+      <p>
+        The Shinobi no mono have been speaking to the imagination for
+        centuries. They appeared from Hollywood blockbusters to
+        contemporary kabuki theater. Through time, fact and fiction about
+        the Shinobi became intertwined, especially during and after the
+        Meiji restoration (1868–1912), where the Ninja became an
+        important part of the creation of an identity for the emerging
+        Japanese nation.
+      </p>
+      <p>
+        Hattori Hanzō might have been the most famous ninja ever. He was a
+        samurai trained in the art of the Ninja in Iga who saved the life
+        of Tokugawa Ieyasu, and later helped him become the ruler of a
+        united Japan. He was trained by his family in Iga. Iga was a
+        mountain-isolated province where the art of the Shinobi was
+        perfected. That is why, in contemporary literature, the Ninja
+        were also referred to as Iga no mono (Person from Iga).
+      </p>
+      <p>
+        This project tries to keep the Ninja active, but focuses on the
+        historical part instead of the mythologized version. In this way,
+        the cultural heritage gets preserved in a historically
+        representative way.
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="section-subject">
+    <p class="eyebrow">The Bridge Subject</p>
+    <h2 class="title">Hattori Hanzō</h2>
+    <div id="subject-card" class="subject-card">
+      <!-- populated by js/site.js from data/graph.json -->
+    </div>
+  </section>
+
+  <section class="block" id="section-theoretical">
+    <p class="eyebrow">Knowledge Organization</p>
+    <h2 class="title">Theoretical Model</h2>
+    <p class="lede">
+      The mind map: Hattori Hanzō at the centre, every entity and relation
+      labelled with the same names used in the TEI and CSV files. The main source used was wikidata, but it has also been enriched with other sources. Hand maintained
+      in <code>organization/theoretical-model.drawio</code> and converted to
+      SVG by the main python function where the pipeline is located
+    </p>
+    <div class="diagram-wrap dark">
+      <img src="assets/theoretical-model.svg" alt="Theoretical model mind map: Hattori Hanzō at the centre, connected to every entity by a labelled relation">
+    </div>
+  </section>
+
+  <section class="block" id="section-conceptual">
+    <p class="eyebrow">Knowledge Organization</p>
+    <h2 class="title">Conceptual Model</h2>
+    <p class="lede">
+      The same relations abstracted to classes and properties only. No
+      individuals. Hand-maintained in
+      <code>organization/ConceptualModel.drawio</code>, converted the same way.
+    </p>
+    <div class="diagram-wrap">
+      <img src="assets/conceptual-model.svg" alt="Conceptual model: RDF classes and the properties connecting them, with literal-valued facts as separate leaf nodes">
+    </div>
+  </section>
+
+  <section class="block" id="section-rdf-graph">
+    <p class="eyebrow">The Actual Data</p>
+    <h2 class="title">RDF Graph</h2>
+    <p class="lede">
+      This is the rdf database. Its every
+      triple the pipeline produced, entities and literal facts (names,
+      dates, notes) alike, rendered by the
+      <a href="https://www.ldf.fi/service/rdf-grapher" target="_blank" rel="noopener">ldf.fi RDF Grapher</a>
+      (Graphviz) straight from <code>turtle/ninja_merged.ttl</code> each
+      time <code>main.py</code> runs. It uses both the information from the TEI file and extra information that complements the ontology stored in extra csv files.
+    </p>
+    <div class="diagram-wrap native">
+      <img src="assets/rdf-graph.svg" alt="Full RDF graph: every entity and literal-valued fact in the merged Turtle output, laid out by Graphviz">
+    </div>
+  </section>
+
+  <section class="block" id="section-entities">
+    <p class="eyebrow">Ten Entities</p>
+    <h2 class="title">Connected to Him</h2>
+    <div id="entity-filters" class="filters"></div>
+    <div id="entity-grid" class="grid"></div>
+  </section>
+
+  <section class="block" id="section-extra">
+    <p class="eyebrow">Supporting Cast</p>
+    <h2 class="title">Supporting Entities</h2>
+    <p class="lede">
+      Real people and places that never appear as their own entry in the
+      source text, but are needed to state facts about the entities above. They are important semantically for the entities.
+      They're kept in their own dataset (the csvs mentioned) rather than inflating the core ten.
+    </p>
+    <div id="bridge-list" class="bridge-list"></div>
+  </section>
+
+  <section class="block" id="section-source">
+    <p class="eyebrow">Technical details</p>
+    <h2 class="title">Source Code</h2>
+    <p class="lede">
+      The two files that actually produce everything above: the TEI
+      encoding of the source text, and the script that reads it (plus the
+      CSVs) and writes RDF. Loaded live from the project files, not pasted
+      in by hand.
+    </p>
+    <p class="lede"><a href="tei_encoding.html" target="_blank" rel="noopener">Open the XSLT-transformed TEI as HTML &#8594;</a></p>
+    <h3 class="code-heading">tei/tei_encoding.xml</h3>
+    <pre class="code-block"><code id="code-tei">Loading…</code></pre>
+    <h3 class="code-heading">scripts/tei_csv_to_rdf.py</h3>
+    <pre class="code-block"><code id="code-script">Loading…</code></pre>
+  </section>
+
+  <footer>
+    <p>Bram Mathijsen</p>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

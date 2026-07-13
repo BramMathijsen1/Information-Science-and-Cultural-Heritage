@@ -1,0 +1,19 @@
+subject,predicate,object
+hattori_hanzo,has type,person
+hattori_hanzo,has title,Hattori Hanzō
+hattori_hanzo,was born in,mikawa_province
+hattori_hanzo,is retainer of,tokugawa_ieyasu
+hattori_hanzo,has note,Commanded the shogunate's yoriki officers and 200 civil officials after Ieyasu's move to the Kantō region.
+hattori_hanzo,has note,Retired as a Buddhist monk and founded Sainen-ji temple in Edo (now Shinjuku Tokyo) where he is buried.
+hattori_hanzo,is succeeded by,hattori_masanari
+#
+# === Conceptual model — hattori_hanzo = crm:E21_Person (+ foaf:Person) ===
+# has type        -> rdf:type           (class: crm:E21_Person)
+# has title       -> schema:name        crm:E21_Person -> Literal
+# was born in     -> schema:birthPlace  crm:E21_Person -> crm:E53_Place
+# is retainer of  -> dct:relation       crm:E21_Person -> crm:E21_Person
+#   (pragmatic fallback: no CRM/schema property models an ongoing lord/vassal
+#    tie as cleanly as an event-based participation would; dct:relation is
+#    the deliberately loose "related resource" property)
+# has note        -> dct:description    crm:E21_Person -> Literal
+# is succeeded by -> dct:isReplacedBy   crm:E21_Person -> crm:E21_Person

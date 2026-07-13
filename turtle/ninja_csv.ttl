@@ -1,0 +1,115 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eac-cpf: <http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ninja: <http://example.org/ninja-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ninja:isVassalOf a owl:ObjectProperty ;
+    rdfs:label "is vassal of"@en ;
+    rdfs:comment "A feudal-era person's ongoing service obligation to their lord. No CIDOC-CRM or schema.org property models this without reifying it as its own Activity/Employment event; EAC-CPF's cpfRelation is the closest existing model (built for person/family/corporate-body relations) but its own relation-type vocabulary has no term this specific, so this narrower property is declared as its sub-property."@en ;
+    rdfs:domain crm:E21_Person ;
+    rdfs:range crm:E21_Person ;
+    rdfs:subPropertyOf eac-cpf:cpfRelation .
+
+wd:Q316952 a crm:E21_Person,
+        foaf:Person ;
+    ninja:isVassalOf wd:Q171977 ;
+    dct:description "Commanded the shogunate's yoriki officers and 200 civil officials after Ieyasu's move to the Kantō region.",
+        "Retired as a Buddhist monk and founded Sainen-ji temple in Edo (now Shinjuku Tokyo) where he is buried." ;
+    dct:isReplacedBy wd:Q4432157 ;
+    schema:birthPlace wd:Q768158 ;
+    schema:name "Hattori Hanzō" .
+
+wd:Q3275530 a crm:E74_Group ;
+    dct:date "1487"^^xsd:gYear ;
+    dct:description "Historically associated above all with the Hattori clan and the Fujibayashi clan." ;
+    schema:name "Iga-ryū" .
+
+wd:Q42564798 a schema:VideoGame ;
+    dct:issued "2020"^^xsd:gYear ;
+    dct:subject wd:Q9402 ;
+    foaf:maker wd:Q916714 ;
+    schema:genre "action-adventure" ;
+    schema:name "Ghost of Tsushima" ;
+    schema:publisher "Sony Interactive Entertainment" .
+
+wd:Q4306401 a schema:Museum ;
+    dct:description "Located near Iga Ueno Castle; includes a model ninja village open to tours." ;
+    dct:spatial wd:Q1047128 ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:name "Ninja Museum of Igaryu" .
+
+wd:Q6884757 a crm:E22_Human-Made_Object ;
+    dct:description "Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear.",
+        "Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device." ;
+    dct:relation wd:Q539067 ;
+    schema:name "Mizugumo" .
+
+wd:Q7510141 a schema:Event ;
+    dct:date "1562"^^xsd:gYear ;
+    dct:description "Matsudaira Motoyasu's forces took hostages to trade for his own family then held by the Imagawa clan." ;
+    dct:spatial wd:Q11358375 ;
+    crm:P11_had_participant wd:Q171977,
+        wd:Q4352873 ;
+    schema:name "Siege of Kaminogō Castle" .
+
+wd:Q806956 a schema:Book ;
+    dct:description "Compiled in 1676, after the Sengoku-period height of ninja activity had passed and during a long peace under Tokugawa rule; its compiler was not a contemporary of the practices it records but drew on earlier oral and written tradition.",
+        "Survives in two main manuscript traditions: a Kōga version (22 chapters in 10+1 volumes) and an Iga version (22 chapters in 12+4 volumes).",
+        "Translated into English as \"The Book of Ninja\" by Antony Cummins and Yoshie Minami (2013)." ;
+    schema:author "Fujibayashi Yasutake" ;
+    schema:name "Bansenshūkai" .
+
+wd:Q860340 a crm:E22_Human-Made_Object ;
+    dct:description "Originally a stabbing/thrusting tool rather than a throwing weapon; the \"thrown ninja knife\" image comes from modern fiction." ;
+    dct:relation wd:Q539067 ;
+    crm:P43_has_dimension "20-30 centimetre" ;
+    crm:P45_consists_of "soft iron" ;
+    schema:name "Kunai" .
+
+wd:Q1047128 a schema:Place ;
+    dct:date "1871"^^xsd:gYear ;
+    dct:description "Divided into 4 districts (郡) with about 197 villages before its abolition." ;
+    dct:isReplacedBy wd:Q128196 ;
+    schema:name "Iga Province" .
+
+wd:Q11358375 a schema:Place ;
+    dct:spatial wd:Q768158 ;
+    schema:name "Kaminogō Castle" .
+
+wd:Q128196 a schema:Place ;
+    schema:name "Mie Prefecture" .
+
+wd:Q4352873 a crm:E21_Person,
+        foaf:Person ;
+    schema:name "Udono Nagateru" .
+
+wd:Q4432157 a crm:E21_Person,
+        foaf:Person ;
+    schema:name "Hattori Masanari" .
+
+wd:Q916714 a crm:E74_Group ;
+    schema:name "Sucker Punch Productions" .
+
+wd:Q9402 a skos:Concept ;
+    dct:description "Defined more by skillset and function than by social rank or class; the identity could be adopted situationally rather than marking a fixed separate caste, and historical samurai are recorded taking on ninja roles." ;
+    skos:related wd:Q539067 ;
+    schema:name "Ninja" .
+
+wd:Q171977 a crm:E21_Person,
+        foaf:Person ;
+    schema:name "Tokugawa Ieyasu" .
+
+wd:Q768158 a schema:Place ;
+    schema:name "Mikawa Province" .
+
+wd:Q539067 a skos:Concept ;
+    dct:description "Not a single unified martial art but a collective term for numerous distinct schools (ryūha), often family-based, whose techniques were historically transmitted primarily through oral instruction rather than a standardized curriculum." ;
+    schema:name "Ninjutsu" .
+

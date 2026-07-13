@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Out of the Shadows: Hattori Hanzō and the Ninja Legend in Cultural Heritage</title>
+        <author>Bram Mathijsen</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Bram Mathijsen</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date when="2026">2026</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>Text excerpts from the English Wikipedia articles "Hattori Hanzō", "Ninja",
+          "Ninjutsu", "Iga Province", "Iga-ryū", "Bansenshūkai", "Mizugumo", "Kunai",
+          "Iga-ryū Ninja Museum", "Ghost of Tsushima" and "Siege of Kaminogō Castle",
+          <ref target="https://en.wikipedia.org/wiki/Hattori_Hanz%C5%8D">en.wikipedia.org</ref>.</bibl>
+
+        <listBibl>
+          <!-- Entity: Bansenshūkai (ninjutsu manual) -->
+          <bibl xml:id="bansenshukai" type="book">
+            <author ref="https://id.loc.gov/authorities/names/n80012305">Fujibayashi Yasutake</author>
+            <title ref="http://www.wikidata.org/entity/Q806956 http://dbpedia.org/resource/Bansenshūkai">Bansenshūkai</title>
+            <date when="1676">1676</date>
+            <textLang mainLang="ja">Japanese</textLang>
+            <note>Compilation of ninjutsu knowledge from the Iga and Kōga clans to preserve the tradition.</note>
+          </bibl>
+          <!-- Entity: Ghost of Tsushima (video game that propagates the Ninja image today) -->
+          <bibl xml:id="ghost_tsushima" type="videoGame">
+            <title ref="http://www.wikidata.org/entity/Q42564798 http://dbpedia.org/resource/Ghost_of_Tsushima">Ghost of Tsushima</title>
+            <date when="2020">2020</date>
+            <note>Action-adventure video game developed by Sucker Punch Productions
+              for PlayStation 4, built around the choice between honourable samurai
+              combat and stealthy "Ghost" tactics associated with the ninja.</note>
+          </bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <!-- Entities as skos:Concept: Ninja and Ninjutsu. -->
+      <classDecl>
+        <taxonomy xml:id="concepts">
+          <category xml:id="ninja" sameAs="http://www.wikidata.org/entity/Q9402 http://dbpedia.org/resource/Ninja">
+            <catDesc>Ninja (shinobi no mono or Iga no mono), a spy, infiltrator, saboteur and assassin of pre-modern
+              Japan, the identity <persName ref="#hattori_hanzo">Hattori Hanzō</persName>
+              embodies.</catDesc>
+          </category>
+          <category xml:id="ninjutsu" sameAs="http://www.wikidata.org/entity/Q539067 http://dbpedia.org/resource/Ninjutsu">
+            <catDesc>Ninjutsu. The techniques and tactics of the ninja, practised
+              and taught within the <orgName ref="#iga_ryu">Iga-ryū</orgName> tradition and described meticulously in the <title ref="#bansenshukai">Bansenshūkai</title>.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <particDesc>
+        <!-- People, Hattori Hanzō. -->
+        <listPerson>
+          <person xml:id="hattori_hanzo">
+            <persName ref="http://www.wikidata.org/entity/Q316952 https://viaf.org/viaf/257979857 http://dbpedia.org/resource/Hattori_Hanzō">Hattori Hanzō <addName type="nickname">Oni no Hanzō (<foreign xml:lang="ja">鬼の半蔵</foreign>, Demon Hanzō)</addName></persName>
+            <birth when="1542"/>
+            <death when="1597"/>
+          </person>
+        </listPerson>
+
+        <!-- Organisations / groups: Iga-ryū, the ninjutsu school/tradition. -->
+        <listOrg>
+          <!-- Entity: Iga-ryū -->
+          <org xml:id="iga_ryu" type="school">
+            <orgName ref="http://www.wikidata.org/entity/Q3275530 http://dbpedia.org/resource/Iga-ryū">Iga-ryū</orgName>
+            <note>Umbrella term for the ninjutsu traditions of the Iga region.</note>
+          </org>
+        </listOrg>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+
+  <!-- Places, objects, events and relations referenced from the body text. -->
+  <standOff>
+    <!-- Places: Iga Province (region) and the Ninja Museum of Igaryu (museum in Iga). -->
+    <listPlace>
+      <!-- Entity: Iga Province -->
+      <place xml:id="iga_province" type="region">
+        <!-- the GeoNames id here points to the modern city of Iga, because the historic one doenst have a geonames identity.
+        But the location is the same as the historic Iga -->
+        <placeName ref="http://www.wikidata.org/entity/Q1047128 https://sws.geonames.org/11468270/ https://viaf.org/viaf/252317211 http://dbpedia.org/resource/Iga_Province">Iga Province</placeName>
+        <note>Mountainous, historically isolated province in what is now
+          western Mie Prefecture; a birthplace of the ninja clans.</note>
+      </place>
+      <!-- Entity: Ninja Museum of Igaryu -->
+      <place xml:id="ninja_museum" type="museum">
+        <placeName ref="http://www.wikidata.org/entity/Q4306401 http://dbpedia.org/resource/Ninja_Museum_of_Igaryu">Ninja Museum of Igaryu</placeName>
+        <note>Museum in Iga, Mie Prefecture, dedicated to the history of the
+          ninja and ninjutsu.</note>
+      </place>
+    </listPlace>
+
+    <!-- Objects: the two ninja tools/weapons. -->
+    <listObject>
+      <!-- Entity: Mizugumo -->
+      <object xml:id="mizugumo">
+        <objectIdentifier>
+          <objectName ref="http://www.wikidata.org/entity/Q6884757 http://dbpedia.org/resource/Mizugumo">Mizugumo</objectName>
+        </objectIdentifier>
+        <note>Water-crossing device said to have been used by the ninja,
+          also known as the "water spider".</note>
+      </object>
+      <!-- Entity: Kunai -->
+      <object xml:id="kunai">
+        <objectIdentifier>
+          <objectName ref="http://www.wikidata.org/entity/Q860340 http://dbpedia.org/resource/Kunai">Kunai</objectName>
+        </objectIdentifier>
+        <note>Originally a gardening and masonry tool, later adapted by the
+          ninja into a concealable weapon.</note>
+      </object>
+    </listObject>
+
+    <!-- Events: the earliest historically documented ninja operation
+         attributed to Hattori Hanzō. -->
+    <listEvent>
+      <!-- Entity: Siege of Kaminogō Castle -->
+      <event xml:id="kaminogo_siege" when="1562">
+        <eventName ref="http://www.wikidata.org/entity/Q7510141 http://dbpedia.org/resource/Siege_of_Kaminogō_Castle">Siege of Kaminogō Castle</eventName>
+        <note>1562 siege of an Imagawa-held castle in Mikawa Province by
+          Matsudaira Motoyasu (the future Tokugawa Ieyasu), during which
+          Hattori Hanzō led a small band of ninja in a raid credited with
+          recovering Ieyasu's hostage family.</note>
+      </event>
+    </listEvent>
+
+    <!-- Relations between entities. Only relations actually stated in the body
+         text are kept here; anything not in the text belongs in the CSV files. -->
+    <listRelation>
+      <relation name="member_of" active="#hattori_hanzo" passive="#iga_ryu"/>
+      <relation name="embodies" active="#hattori_hanzo" passive="#ninja"/>
+      <relation name="born_in" active="#hattori_hanzo" passive="#iga_province"/>
+      <relation name="practices" active="#hattori_hanzo" passive="#ninjutsu"/>
+      <relation name="originates_in" active="#iga_ryu" passive="#iga_province"/>
+      <relation name="teaches" active="#iga_ryu" passive="#ninjutsu"/>
+      <relation name="documents" active="#bansenshukai" passive="#ninjutsu"/>
+      <relation name="location" active="#ninja_museum" passive="#iga_province"/>
+      <relation name="about" active="#ninja_museum" passive="#ninja"/>
+      <relation name="displays" active="#ninja_museum" passive="#kunai"/>
+      <relation name="used_by" active="#mizugumo" passive="#ninja"/>
+      <relation name="depicts" active="#ghost_tsushima" passive="#ninja"/>
+      <relation name="had_participant" active="#kaminogo_siege" passive="#hattori_hanzo"/>
+      <relation name="demonstrates" active="#kaminogo_siege" passive="#ninjutsu"/>
+    </listRelation>
+  </standOff>
+
+  <text>
+    <body>
+      <!-- Short Wikipedia excerpts. Each entity mention is tagged with the
+           matching element and @ref to its header id. Named terms/epithets
+           use <term>, with Japanese script inline via <foreign xml:lang="ja">. -->
+
+      <div type="historical_person">
+        <head>Hattori Hanzō</head>
+        <p>
+          <persName ref="#hattori_hanzo">Hattori Hanzō</persName> (c. 1542 – 1597) was a
+          samurai (<foreign xml:lang="ja">侍</foreign>) and tactical expert who served the Tokugawa clan, earning the nickname
+          <term>Oni no Hanzō</term> (<foreign xml:lang="ja">鬼の半蔵</foreign>, Demon Hanzō) for saving the life of Tokugawa
+          Ieyasu and helping him unify Japan. As a commander of
+          <rs type="concept" ref="#ninja">ninja</rs> forces trained in
+          <placeName ref="#iga_province">Iga Province</placeName>, he became one of the
+          most famous men ever called <term>Iga no mono</term> (<foreign xml:lang="ja">伊賀の者</foreign>) — "a person from Iga".
+        </p>
+      </div>
+
+      <div type="siege">
+        <head>Siege of Kaminogō Castle</head>
+        <p>
+          In <rs type="event" ref="#kaminogo_siege">1562</rs>, early in Matsudaira
+          Motoyasu's (the future Tokugawa Ieyasu's) revolt against Imagawa dominance,
+          <persName ref="#hattori_hanzo">Hattori Hanzō</persName> led a small band of
+          <rs type="concept" ref="#ninja">ninja</rs> against Kaminogō Castle. Hanzō is
+          credited with rescuing Ieyasu's hostage wife and children from the Imagawa
+          garrison there, in one of the few operations attributed to him that historical
+          sources, rather than legend alone, actually record.
+        </p>
+      </div>
+
+      <div type="concept_ninja">
+        <head>Ninja</head>
+        <p>
+          A <rs type="concept" ref="#ninja">ninja</rs> was a spy and infiltrator of
+          pre-modern Japan, a mercenary who gathered intelligence and carried out
+          sabotage. Regional terms such as <term>Iga-mono</term> (<foreign xml:lang="ja">伊賀者</foreign>) identified these
+          operatives by their origin, and the
+          <placeName ref="#iga_province">Iga</placeName> and Kōga (<foreign xml:lang="ja">甲賀</foreign>) regions became
+          especially renowned for training them during the Sengoku period (<foreign xml:lang="ja">戦国時代</foreign>).
+        </p>
+      </div>
+
+      <div type="concept_ninjutsu">
+        <head>Ninjutsu</head>
+        <p>
+          <rs type="concept" ref="#ninjutsu">Ninjutsu</rs> (<foreign xml:lang="ja">忍術</foreign>) encompasses the techniques
+          and skills used by the ninja — irregular warfare, intelligence gathering, and
+          above all methods to avoid detection and to escape, taught and preserved
+          within the <orgName ref="#iga_ryu">Iga-ryū</orgName> tradition.
+        </p>
+      </div>
+
+      <div type="place">
+        <head>Iga Province</head>
+        <p>
+          <placeName ref="#iga_province">Iga Province</placeName>, in what is now
+          western Mie Prefecture, was rather inaccessible because of its mountainous
+          terrain and poor roads. This isolation let the region become a centre of
+          <rs type="concept" ref="#ninjutsu">ninjutsu</rs> activity, one of the
+          birthplaces of the ninja clans alongside Kōga.
+        </p>
+      </div>
+
+      <div type="school">
+        <head>Iga-ryū</head>
+        <p>
+          <orgName ref="#iga_ryu">Iga-ryū</orgName> (<foreign xml:lang="ja">伊賀流</foreign>) is an umbrella term, according to
+          Japanese legend, for the <rs type="concept" ref="#ninjutsu">ninjutsu</rs>
+          traditions that came from the <placeName ref="#iga_province">Iga</placeName>
+          region, in what is now Iga City and Nabari City in Mie Prefecture.
+        </p>
+      </div>
+
+      <div type="ninja_manual">
+        <head>Bansenshūkai</head>
+        <p>
+          The <title ref="#bansenshukai">Bansenshūkai</title> (<foreign xml:lang="ja">万川集海</foreign>), compiled in 1676 by
+          Fujibayashi Yasutake, gathered the
+          <rs type="concept" ref="#ninjutsu">ninjutsu</rs> knowledge of the Iga and
+          Kōga clans into a single text, preserving tactical expertise developed over
+          Japan's long period of conflict. The text was made to preserve the art of
+          Ninjutsu in a period of peace where it was no longer needed.
+        </p>
+      </div>
+
+      <div type="tool">
+        <head>Mizugumo</head>
+        <p>
+          The <rs type="object" ref="#mizugumo">mizugumo</rs> (<foreign xml:lang="ja">水蜘蛛</foreign>), or "water spider", was a
+          water-crossing device said to have been used by the
+          <rs type="concept" ref="#ninja">ninja</rs> to cross moats, rivers, and other
+          bodies of water undetected.
+        </p>
+      </div>
+
+      <div type="weapon">
+        <head>Kunai</head>
+        <p>
+          The <rs type="object" ref="#kunai">kunai</rs> was originally a farming and
+          masonry tool. Its low cost and wide availability made it easy for the  <rs type="concept" ref="#ninja">ninja</rs>
+          to adapt into a concealable weapon, giving it its iconic place in ninja
+          equipment.
+        </p>
+      </div>
+
+      <div type="museum">
+        <head>Ninja Museum of Igaryu</head>
+        <p>
+          The <placeName ref="#ninja_museum">Ninja Museum of Igaryu</placeName>
+          (<foreign xml:lang="ja">伊賀流忍者博物館</foreign>), in
+          <placeName ref="#iga_province">Iga</placeName>, Mie Prefecture, is dedicated to
+          the history of the <rs type="concept" ref="#ninja">ninja</rs> and displays
+          over four hundred ninja tools and weapons, including
+          <rs type="object" ref="#kunai">kunai</rs> and shuriken (<foreign xml:lang="ja">手裏剣</foreign>).
+        </p>
+      </div>
+
+      <div type="modern_media">
+        <head>Ghost of Tsushima</head>
+        <p>
+          <title ref="#ghost_tsushima">Ghost of Tsushima</title>, released in 2020 by
+          Sucker Punch Productions, lets its samurai protagonist choose between
+          honourable combat and the dishonourable "Ghost" stealth tactics long
+          associated with the <rs type="concept" ref="#ninja">ninja</rs>, keeping the
+          legend alive in contemporary popular culture.
+        </p>
+      </div>
+
+    </body>
+  </text>
+
+  <!-- Extra entities: named in the body text above but with no TEI record
+       of their own; defined in csv/extra_entities.csv instead. -->
+</TEI>

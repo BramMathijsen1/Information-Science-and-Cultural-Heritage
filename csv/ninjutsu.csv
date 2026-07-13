@@ -1,0 +1,12 @@
+subject,predicate,object
+ninjutsu,has type,concept
+ninjutsu,has title,Ninjutsu
+ninjutsu,has note,"Not a single unified martial art but a collective term for numerous distinct schools (ryūha), often family-based, whose techniques were historically transmitted primarily through oral instruction rather than a standardized curriculum."
+#
+# === Conceptual model — ninjutsu = skos:Concept ===
+# has type   -> rdf:type      (class: skos:Concept)
+# has title  -> schema:name   skos:Concept -> Literal
+#
+# (mizugumo/kunai -> ninjutsu is stated the other way round, from the
+#  object's own file, as "is used in" -> dct:relation — keeping one
+#  canonical direction instead of asserting the same tie from both ends.)

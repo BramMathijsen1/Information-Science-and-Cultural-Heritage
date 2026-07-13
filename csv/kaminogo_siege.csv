@@ -1,0 +1,19 @@
+subject,predicate,object
+kaminogo_siege,has type,event
+kaminogo_siege,has title,Siege of Kaminogō Castle
+kaminogo_siege,has date,1562
+kaminogo_siege,had participant,tokugawa_ieyasu
+kaminogo_siege,had participant,udono_nagateru
+kaminogo_siege,location,kaminogo_castle
+kaminogo_siege,has note,Matsudaira Motoyasu's forces took hostages to trade for his own family then held by the Imagawa clan.
+#
+# === Conceptual model — kaminogo_siege = schema:Event ===
+# has type        -> rdf:type                (class: schema:Event)
+# has title       -> schema:name             schema:Event -> Literal
+# has date        -> dct:date                schema:Event -> xsd:gYear
+# had participant -> crm:P11_had_participant  schema:Event -> crm:E21_Person
+#   (used for every participant regardless of side — Ieyasu, Udono
+#    Nagateru, and, via the TEI relation of the same name, Hattori Hanzō —
+#    since P11 does not itself encode allegiance)
+# location        -> dct:spatial              schema:Event -> crm:E53_Place
+# has note        -> dct:description          schema:Event -> Literal

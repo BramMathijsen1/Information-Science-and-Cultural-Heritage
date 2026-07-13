@@ -1,0 +1,17 @@
+subject,predicate,object
+kunai,has type,object
+kunai,has title,Kunai
+kunai,is used in,ninjutsu
+kunai,has material,soft iron
+kunai,has length,20-30 centimetre
+kunai,has note,Originally a stabbing/thrusting tool rather than a throwing weapon; the "thrown ninja knife" image comes from modern fiction.
+#
+# === Conceptual model — kunai = crm:E22_Human-Made_Object ===
+# has type     -> rdf:type              (class: crm:E22_Human-Made_Object)
+# has title    -> schema:name           crm:E22_Human-Made_Object -> Literal
+# is used in   -> dct:relation          crm:E22_Human-Made_Object -> skos:Concept
+# has material -> crm:P45_consists_of   crm:E22_Human-Made_Object -> Literal
+#   (simplified: stores the material as a literal instead of a full
+#    crm:E57_Material instance)
+# has length   -> crm:P43_has_dimension crm:E22_Human-Made_Object -> Literal
+# has note     -> dct:description       crm:E22_Human-Made_Object -> Literal

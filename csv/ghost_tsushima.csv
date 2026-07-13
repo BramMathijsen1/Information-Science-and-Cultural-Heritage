@@ -1,0 +1,20 @@
+subject,predicate,object
+ghost_tsushima,has type,video game
+ghost_tsushima,has title,Ghost of Tsushima
+ghost_tsushima,has release date,2020
+ghost_tsushima,has genre,action-adventure
+ghost_tsushima,has developer,sucker_punch
+ghost_tsushima,has publisher,Sony Interactive Entertainment
+ghost_tsushima,is about,ninja
+#
+# === Conceptual model — ghost_tsushima = schema:VideoGame ===
+# has type         -> rdf:type          (class: schema:VideoGame)
+# has title        -> schema:name       schema:VideoGame -> Literal
+# has release date -> dct:issued        schema:VideoGame -> xsd:gYear
+# has genre        -> schema:genre      schema:VideoGame -> Literal
+# has developer    -> foaf:maker        schema:VideoGame -> crm:E74_Group
+# has publisher    -> schema:publisher  schema:VideoGame -> Literal
+#   (kept as a literal, not an entity link: Sony Interactive Entertainment
+#    was not one of the entities requested to be reconciled, unlike Sucker
+#    Punch — see extra_entities.csv. Could be promoted the same way later.)
+# is about         -> dct:subject       schema:VideoGame -> skos:Concept

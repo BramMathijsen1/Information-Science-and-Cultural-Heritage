@@ -1,0 +1,13 @@
+subject,predicate,object
+iga_ryu,has type,school
+iga_ryu,has title,Iga-ryū
+iga_ryu,has date,1487
+iga_ryu,has note,Historically associated above all with the Hattori clan and the Fujibayashi clan.
+#
+# === Conceptual model — iga_ryu = crm:E74_Group ===
+# has type  -> rdf:type         (class: crm:E74_Group)
+# has title -> schema:name      crm:E74_Group -> Literal
+# has date  -> dct:date         crm:E74_Group -> xsd:gYear
+#   (here: the year "Iga-mono" first appear in historical records, per
+#    Wikipedia's Iga-ryū article, used as a proxy founding/attestation date)
+# has note  -> dct:description  crm:E74_Group -> Literal

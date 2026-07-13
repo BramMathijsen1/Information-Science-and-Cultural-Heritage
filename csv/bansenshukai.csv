@@ -1,0 +1,18 @@
+subject,predicate,object
+bansenshukai,has type,book
+bansenshukai,has title,Bansenshūkai
+bansenshukai,has author,Fujibayashi Yasutake
+bansenshukai,has note,Survives in two main manuscript traditions: a Kōga version (22 chapters in 10+1 volumes) and an Iga version (22 chapters in 12+4 volumes).
+bansenshukai,has note,Translated into English as "The Book of Ninja" by Antony Cummins and Yoshie Minami (2013).
+bansenshukai,has note,"Compiled in 1676, after the Sengoku-period height of ninja activity had passed and during a long peace under Tokugawa rule; its compiler was not a contemporary of the practices it records but drew on earlier oral and written tradition."
+#
+# === Conceptual model — bansenshukai = schema:Book ===
+# has type   -> rdf:type         (class: schema:Book)
+# has title  -> schema:name      schema:Book -> Literal
+# has author -> schema:author    schema:Book -> Literal
+#   (literal, not an entity link — Fujibayashi is deliberately not one of
+#   the 10 entities; same pattern as ghost_tsushima's "has publisher".
+#   His LOC authority id (n80012305) stays on the TEI <author> element as
+#   a citation, same as before — this literal is a separate, independent
+#   fix for authorship never having been modeled as a property at all.)
+# has note   -> dct:description  schema:Book -> Literal
