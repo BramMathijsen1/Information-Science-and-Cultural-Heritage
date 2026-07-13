@@ -71,7 +71,7 @@ Five steps, in order:
 2. `generate_site_data.py` — RDF → website data (`docs/data/graph.json`), and copies the TEI file + `tei_csv_to_rdf.py` into `docs/assets/` for the site's source-code section.
 3. `generate_diagrams.py` — the two hand-drawn `.drawio` files → SVG.
 4. `generate_rdf_graph_diagram.py` — full RDF graph → SVG via ldf.fi (needs internet).
-5. `transform.py` (in `xslt/`) — TEI → HTML via `tei_to_html.xsl` (needs `lxml`, the one non-stdlib dependency for this step).
+5. `transform.py` (in `xslt/`) — TEI → HTML via `tei_to_html.xsl`
 
 Edit a CSV or the TEI file, rerun `main.py`, everything above regenerates.
 

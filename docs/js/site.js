@@ -32,7 +32,6 @@ function renderStatusbar(data) {
 function renderSubject(data) {
   const card = document.getElementById("subject-card");
   const s = data.subject;
-  const initial = s.label.trim().charAt(0);
 
   const body = el("div", {}, [
     el("span", { class: "type-tag" }, [document.createTextNode(s.type)]),
@@ -46,7 +45,11 @@ function renderSubject(data) {
     wikidataLink(s),
   ]));
 
-  card.appendChild(el("div", { class: "badge" }, [document.createTextNode(initial)]));
+  card.appendChild(el("img", {
+    class: "badge",
+    src: "assets/hattori_hanzo.jpg",
+    alt: s.label,
+  }));
   card.appendChild(body);
 }
 

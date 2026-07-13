@@ -220,15 +220,11 @@ section.block#section-rdf-graph {
 }
 
 .subject-card .badge {
-  width: 84px;
-  height: 84px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 128px;
+  height: 138px;
+  object-fit: cover;
   background: var(--accent-soft);
   border: 1px solid var(--accent);
-  font-size: 2.4rem;
-  color: var(--accent);
   flex-shrink: 0;
 }
 
