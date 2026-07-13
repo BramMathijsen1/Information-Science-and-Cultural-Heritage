@@ -14,7 +14,7 @@ Hattori Hanzō might have been the most famous ninja ever. He was a samurai trai
 
 This project tries to keep the the Ninja active, but focusses on the historical part instead of the mythologized version. In this way the cultural heritage gets preserved in a historically representative way.
 
-## The entities (Step 1 — entity worksheet)
+## The entities
 
 | Item | Entity type | Ontology class | Wikidata |
 |---|---|---|---|
