@@ -6,9 +6,6 @@
 
 During my time in Japan I became fascinated by the Ninja (also known as shinobi no mono, Iga no mono). This project tries to capture the concepts surrounding the Shinobi using the most famous ninja Hattori Hanzō as a bridge.
 
-The real life historical person of Hattori Hanzō is used as a the subject. The project gathers ten real entities (a concept, a discipline, a place, an organization, a book, two objects, a museum, a media franchise), and each one is connected to him in some way. Together they show one idea: **how a historical figure becomes a
-legend kept alive through concepts in cultural heritage.**
-
 ## Who were the Shinobi and who was Hattori Hanzō?
 
 The Shinobi no mono have been speaking to the imagination for centuries. They appeared from hollywood blockbusters to contemporary kabuki theater. Trough time fact and fiction about the Shinobi became intertwined, especially during and after the Meji restoration (1868–1912) where the Ninja became an important part for the creation of an identity for the emerging Japanese nation.
