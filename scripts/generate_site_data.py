@@ -55,8 +55,9 @@ def entity_uri_to_id(uri, by_qid):
 def build_entity(g, entity_id):
     uri = WD[WIKIDATA[entity_id]]
 
+    SECONDARY_PREFIXES = ("foaf:", "edm:")
     types = sorted(g.qname(t) for t in g.objects(uri, RDF.type))
-    primary_type = next((t for t in types if not t.startswith("foaf:")), types[0] if types else None)
+    primary_type = next((t for t in types if not t.startswith(SECONDARY_PREFIXES)), types[0] if types else None)
     type_label = CLASS_LABELS.get(primary_type, primary_type or "Unknown")
 
     label = str(next(g.objects(uri, NAME_PROP), entity_id))

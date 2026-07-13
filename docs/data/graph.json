@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T04:11:37+00:00",
+  "generated_at": "2026-07-13T04:16:57+00:00",
   "counts": {
     "entities": 18,
     "relations": 27
@@ -23,8 +23,8 @@
       "qid": "Q806956",
       "uri": "http://www.wikidata.org/entity/Q806956",
       "label": "Bansenshūkai",
-      "type": "edm:ProvidedCHO",
-      "type_qname": "edm:ProvidedCHO",
+      "type": "Book",
+      "type_qname": "schema:Book",
       "descriptions": [
         "Compiled in 1676, after the Sengoku-period height of ninja activity had passed and during a long peace under Tokugawa rule; its compiler was not a contemporary of the practices it records but drew on earlier oral and written tradition.",
         "Survives in two main manuscript traditions: a Kōga version (22 chapters in 10+1 volumes) and an Iga version (22 chapters in 12+4 volumes).",
