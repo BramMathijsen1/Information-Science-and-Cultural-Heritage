@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T04:16:57+00:00",
+  "generated_at": "2026-07-13T05:00:13+00:00",
   "counts": {
     "entities": 18,
     "relations": 27
@@ -47,8 +47,8 @@
       "qid": "Q1047128",
       "uri": "http://www.wikidata.org/entity/Q1047128",
       "label": "Iga Province",
-      "type": "Place",
-      "type_qname": "schema:Place",
+      "type": "Region / Province",
+      "type_qname": "schema:AdministrativeArea",
       "descriptions": [
         "Divided into 4 districts (郡) with about 197 villages before its abolition."
       ],
@@ -156,8 +156,8 @@
       "qid": "Q11358375",
       "uri": "http://www.wikidata.org/entity/Q11358375",
       "label": "Kaminogō Castle",
-      "type": "Place",
-      "type_qname": "schema:Place",
+      "type": "Landmark",
+      "type_qname": "schema:LandmarksOrHistoricalBuildings",
       "descriptions": [],
       "is_extra": true
     },
@@ -166,8 +166,8 @@
       "qid": "Q128196",
       "uri": "http://www.wikidata.org/entity/Q128196",
       "label": "Mie Prefecture",
-      "type": "Place",
-      "type_qname": "schema:Place",
+      "type": "Region / Province",
+      "type_qname": "schema:AdministrativeArea",
       "descriptions": [],
       "is_extra": true
     },
@@ -176,8 +176,8 @@
       "qid": "Q768158",
       "uri": "http://www.wikidata.org/entity/Q768158",
       "label": "Mikawa Province",
-      "type": "Place",
-      "type_qname": "schema:Place",
+      "type": "Region / Province",
+      "type_qname": "schema:AdministrativeArea",
       "descriptions": [],
       "is_extra": true
     },
@@ -186,8 +186,8 @@
       "qid": "Q916714",
       "uri": "http://www.wikidata.org/entity/Q916714",
       "label": "Sucker Punch Productions",
-      "type": "Organization / School",
-      "type_qname": "crm:E74_Group",
+      "type": "Corporation",
+      "type_qname": "schema:Corporation",
       "descriptions": [],
       "is_extra": true
     },
@@ -300,7 +300,7 @@
     {
       "subject": "iga_ryu",
       "subject_label": "Iga-ryū",
-      "predicate": "dct:spatial",
+      "predicate": "schema:foundingLocation",
       "object": "iga_province",
       "object_label": "Iga Province"
     },
@@ -314,7 +314,7 @@
     {
       "subject": "kaminogo_castle",
       "subject_label": "Kaminogō Castle",
-      "predicate": "dct:spatial",
+      "predicate": "schema:containedInPlace",
       "object": "mikawa_province",
       "object_label": "Mikawa Province"
     },
@@ -356,16 +356,16 @@
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "dct:spatial",
-      "object": "iga_province",
-      "object_label": "Iga Province"
+      "predicate": "dct:subject",
+      "object": "ninja",
+      "object_label": "Ninja"
     },
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "dct:subject",
-      "object": "ninja",
-      "object_label": "Ninja"
+      "predicate": "schema:containedInPlace",
+      "object": "iga_province",
+      "object_label": "Iga Province"
     },
     {
       "subject": "kaminogo_siege",
@@ -398,7 +398,7 @@
     {
       "subject": "kaminogo_siege",
       "subject_label": "Siege of Kaminogō Castle",
-      "predicate": "dct:spatial",
+      "predicate": "schema:location",
       "object": "kaminogo_castle",
       "object_label": "Kaminogō Castle"
     }

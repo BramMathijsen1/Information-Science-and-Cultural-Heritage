@@ -24,9 +24,9 @@ wd:Q42564798 a schema:VideoGame ;
 
 wd:Q4306401 a schema:Museum ;
     dct:relation wd:Q860340 ;
-    dct:spatial wd:Q1047128 ;
     dct:subject wd:Q9402 ;
     owl:sameAs dbr:Ninja_Museum_of_Igaryu ;
+    schema:containedInPlace wd:Q1047128 ;
     schema:name "Ninja Museum of Igaryu" .
 
 wd:Q6884757 a crm:E22_Human-Made_Object,
@@ -58,8 +58,8 @@ wd:Q316952 a crm:E21_Person,
     schema:name "Hattori Hanzō" .
 
 wd:Q3275530 a crm:E74_Group ;
-    dct:spatial wd:Q1047128 ;
     owl:sameAs dbr:Iga-ryū ;
+    schema:foundingLocation wd:Q1047128 ;
     schema:knowsAbout wd:Q539067 ;
     schema:name "Iga-ryū" .
 

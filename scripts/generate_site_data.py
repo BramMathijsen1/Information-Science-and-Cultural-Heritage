@@ -30,6 +30,9 @@ CLASS_LABELS = {
     "schema:Museum": "Museum",
     "schema:VideoGame": "Video Game",
     "schema:Event": "Event",
+    "schema:AdministrativeArea": "Region / Province",
+    "schema:LandmarksOrHistoricalBuildings": "Landmark",
+    "schema:Corporation": "Corporation",
     "foaf:Person": "Person",
     "foaf:Organization": "Organization",
 }

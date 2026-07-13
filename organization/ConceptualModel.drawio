@@ -1,20 +1,32 @@
 <mxfile host="65bd71144e">
     <diagram name="Conceptual Model" id="ninja-conceptual-1">
-        <mxGraphModel dx="2124" dy="1418" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="4773" dy="2660" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="Person" value="crm:E21_Person&lt;br&gt;+ foaf:Person" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="1460" y="405" width="480" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="Group" value="crm:E74_Group&lt;br&gt;+ foaf:Organization" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2039" y="616" width="480" height="190" as="geometry"/>
+                <mxCell id="Group" value="crm:E74_Group&lt;br&gt;+ foaf:Organization&lt;br&gt;+ schema:Corporation" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="2350" y="625" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Concept" value="skos:Concept" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2346" y="1149" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2210" y="1018" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Place" value="schema:Place" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2301" y="1872" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2233" y="1845" width="480" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="AdministrativeArea" value="schema:AdministrativeArea" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="2807" y="2470" width="480" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="LandmarksOrHistoricalBuildings" value="schema:LandmarksOrHistorical&lt;br&gt;Buildings" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="2839" y="1430" width="480" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="ecr1" value="rdfs:subClassOf" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;fontColor=#000000;fontSize=20;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="AdministrativeArea" target="Place" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ecr2" value="rdfs:subClassOf" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;fontColor=#000000;fontSize=20;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="LandmarksOrHistoricalBuildings" target="Place" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="Museum" value="schema:Museum" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="1768" y="2151" width="480" height="190" as="geometry"/>
@@ -47,10 +59,10 @@
                     <mxGeometry x="2734" y="515" width="200" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="lit5" value="xsd:string" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#b6e6b6;strokeColor=#000000;fontColor=#000000;fontSize=20;fontStyle=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="2998" y="1123" width="200" height="60" as="geometry"/>
+                    <mxGeometry x="3080" y="975" width="200" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="lit6" value="xsd:string" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#b6e6b6;strokeColor=#000000;fontColor=#000000;fontSize=20;fontStyle=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="3080" y="1280" width="200" height="60" as="geometry"/>
+                    <mxGeometry x="3287" y="1300" width="200" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="lit7" value="xsd:string" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#b6e6b6;strokeColor=#000000;fontColor=#000000;fontSize=20;fontStyle=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="2958" y="1785" width="200" height="60" as="geometry"/>
@@ -232,13 +244,13 @@
                 <mxCell id="eop4" value="schema:knowsAbout" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Group" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="eop5" value="dct:spatial" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Group" target="Place" edge="1">
+                <mxCell id="eop5" value="schema:foundingLocation" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Group" target="Place" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop6" value="dct:subject" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Book" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="eop7" value="dct:spatial" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Place" edge="1">
+                <mxCell id="eop7" value="schema:containedInPlace" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Place" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop8" value="dct:subject" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Concept" edge="1">
@@ -259,7 +271,7 @@
                 <mxCell id="eop13" value="dct:relation" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Event" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="eop14" value="dct:spatial" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Event" target="Place" edge="1">
+                <mxCell id="eop14" value="schema:location" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Event" target="Place" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop15" value="schema:birthPlace" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Person" target="Place" edge="1">
@@ -273,7 +285,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="eop17" value="dct:spatial" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;entryX=0.889;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Place" target="Place" edge="1">
+                <mxCell id="eop17" value="schema:containedInPlace" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;entryX=0.889;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Place" target="Place" edge="1">
                     <mxGeometry x="0.3604" y="26" relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="2600" y="1807"/>

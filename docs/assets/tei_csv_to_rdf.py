@@ -133,10 +133,9 @@ RELATIONS = {
     "embodies": NINJA.embodiesArchetype,
     "born_in": SCHEMA.homeLocation,
     "practices": SCHEMA.knowsAbout,
-    "originates_in": DCT.spatial,
+    "originates_in": SCHEMA.foundingLocation,
     "teaches": SCHEMA.knowsAbout,
     "documents": DCT.subject,
-    "location": DCT.spatial,
     "about": DCT.subject,
     "displays": DCT.relation,
     "used_by": DCT.relation,
@@ -148,18 +147,22 @@ RELATIONS = {
 TYPE_CLASS = {
     "person": CRM.E21_Person,
     "concept": SKOS.Concept,
-    "region": SCHEMA.Place,
-    "province": SCHEMA.Place,
-    "prefecture": SCHEMA.Place,
-    "castle": SCHEMA.Place,
-    "school": CRM.E74_Group,
-    "organization": CRM.E74_Group,
     "book": SCHEMA.Book,
     "object": E22_HUMAN_MADE_OBJECT,
     "museum": SCHEMA.Museum,
     "video game": SCHEMA.VideoGame,
     "event": SCHEMA.Event,
+    **{t: SCHEMA.AdministrativeArea for t in ("region", "province", "prefecture")},
+    "castle": SCHEMA.LandmarksOrHistoricalBuildings,
+    "school": CRM.E74_Group,
+    "organization": SCHEMA.Corporation,
 }
+
+
+def location_predicate(subject_id):
+    """"location" is context-dependent: an Event's location vs. one Place
+    contained within another aren't the same relation."""
+    return SCHEMA.location if TYPES.get(subject_id) == SCHEMA.Event else SCHEMA.containedInPlace
 
 PROP = {
     "has title": SCHEMA.name,
@@ -177,7 +180,6 @@ PROP = {
     "is succeeded by": DCT.isReplacedBy,
     "relates to": SKOS.related,
     "is used in": DCT.relation,
-    "location": DCT.spatial,
     "had participant": CRM.P11_had_participant,
     "has developer": FOAF.maker,
     "is about": DCT.subject,
@@ -282,7 +284,8 @@ def parse_tei(g, tei_file):
         name = rel.get("name")
         active = rel.get("active").lstrip("#")
         passive = rel.get("passive").lstrip("#")
-        g.add((id_to_uri[active], RELATIONS[name], id_to_uri[passive]))
+        predicate = location_predicate(active) if name == "location" else RELATIONS[name]
+        g.add((id_to_uri[active], predicate, id_to_uri[passive]))
 
     return g
 
@@ -307,6 +310,8 @@ def parse_csv(g, csv_dir):
                     g.add((uri(subject), RDF.type, TYPE_CLASS[obj]))
                     if obj == "person":
                         g.add((uri(subject), RDF.type, FOAF.Person))
+                    elif obj == "organization":
+                        g.add((uri(subject), RDF.type, FOAF.Organization))
 
                 elif predicate in DATE_PREDS:
                     date_type = XSD.date if obj.count("-") == 2 else XSD.gYear
@@ -314,6 +319,9 @@ def parse_csv(g, csv_dir):
 
                 elif predicate in STRING_PREDS:
                     g.add((uri(subject), PROP[predicate], Literal(obj)))
+
+                elif predicate == "location":
+                    g.add((uri(subject), location_predicate(subject), uri(obj)))
 
                 else:
                     g.add((uri(subject), PROP[predicate], uri(obj)))
