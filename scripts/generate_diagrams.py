@@ -109,11 +109,15 @@ def render_edge(cell, node_geom, loop_index=0):
     if source == target:
         # Straight source-center-to-target-center geometry collapses to a
         # point for self-loops; bulge a loop out from the right edge instead.
-        # Successive loops on the same box step further out so they don't
-        # render exactly on top of each other.
-        loop_r = max(sw, sh) * 0.35 + loop_index * 90
+        # A same-radius horizontal offset isn't enough separation for labels
+        # this wide, so successive loops on the same box alternate between
+        # the upper and lower half of the box's right edge instead.
+        loop_r = max(sw, sh) * 0.35
         x_edge = sx + sw
-        y1, y2 = sy + sh * 0.3, sy + sh * 0.7
+        if loop_index % 2 == 0:
+            y1, y2 = sy + sh * 0.12, sy + sh * 0.42
+        else:
+            y1, y2 = sy + sh * 0.58, sy + sh * 0.88
         cx = x_edge + loop_r
         line = (f'<path d="M {x_edge:.0f} {y1:.0f} C {cx:.0f} {y1:.0f}, '
                 f'{cx:.0f} {y2:.0f}, {x_edge:.0f} {y2:.0f}" fill="none" '
