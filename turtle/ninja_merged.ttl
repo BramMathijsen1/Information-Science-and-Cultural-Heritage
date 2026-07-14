@@ -44,6 +44,12 @@ ninja:isVassalOf a owl:ObjectProperty ;
     rdfs:range crm:E21_Person ;
     rdfs:subPropertyOf eac-cpf:cpfRelation .
 
+ninja:preservesKnowledgeOf a owl:ObjectProperty ;
+    rdfs:label "preserves knowledge of"@en ;
+    rdfs:comment "A written work compiled specifically to safeguard a school's practices for the future, distinct from merely documenting or being about them. dct:subject/crm:P70_documents both describe a neutral act of recording; this is a stronger, intentional claim of preservation against loss. CIDOC-CRM's own literature notes it 'lacks support for higher-level conceptual structures associated with patterned forms of (intangible) heritage: recurring activities, practices, collective behavior, tradition' — no property in CRM, schema.org, DCT, or RDA models this act specifically."@en ;
+    rdfs:domain schema:Book ;
+    rdfs:range crm:E74_Group .
+
 wd:Q42564798 a schema:VideoGame ;
     dct:issued "2020"^^xsd:gYear ;
     dct:subject wd:Q9402 ;
@@ -59,9 +65,10 @@ wd:Q4306401 a schema:Museum ;
     dct:subject wd:Q9402 ;
     crm:P50i_is_current_keeper_of wd:Q860340 ;
     owl:sameAs dbr:Ninja_Museum_of_Igaryu ;
-    schema:containedInPlace wd:Q1047128 ;
+    schema:containedInPlace wd:Q128196 ;
     schema:foundingDate "1964"^^xsd:gYear ;
-    schema:name "Ninja Museum of Igaryu" .
+    schema:name "Ninja Museum of Igaryu",
+        "伊賀流忍者博物館"@ja .
 
 wd:Q6884757 a crm:E22_Human-Made_Object,
         edm:ProvidedCHO ;
@@ -69,8 +76,10 @@ wd:Q6884757 a crm:E22_Human-Made_Object,
     ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear.",
         "Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device." ;
+    crm:P45_consists_of "Wood" ;
     owl:sameAs dbr:Mizugumo ;
-    schema:name "Mizugumo" .
+    schema:name "Mizugumo",
+        "水蜘蛛"@ja .
 
 wd:Q7510141 a schema:Event ;
     ninja:exemplifiesDiscipline wd:Q539067 ;
@@ -85,20 +94,19 @@ wd:Q7510141 a schema:Event ;
 
 wd:Q806956 a edm:ProvidedCHO,
         schema:Book ;
+    ninja:preservesKnowledgeOf wd:Q3275530 ;
     dct:description "Compiled in 1676, after the Sengoku-period height of ninja activity had passed and during a long peace under Tokugawa rule; its compiler was not a contemporary of the practices it records but drew on earlier oral and written tradition.",
         "Survives in two main manuscript traditions: a Kōga version (22 chapters in 10+1 volumes) and an Iga version (22 chapters in 12+4 volumes).",
         "Translated into English as \"The Book of Ninja\" by Antony Cummins and Yoshie Minami (2013)." ;
     dct:subject wd:Q539067 ;
     owl:sameAs dbr:Bansenshūkai ;
     schema:author "Fujibayashi Yasutake" ;
-    schema:name "Bansenshūkai" .
+    schema:name "Bansenshūkai",
+        "万川集海"@ja .
 
 wd:Q11358375 a schema:LandmarksOrHistoricalBuildings ;
     schema:containedInPlace wd:Q768158 ;
     schema:name "Kaminogō Castle" .
-
-wd:Q128196 a schema:AdministrativeArea ;
-    schema:name "Mie Prefecture" .
 
 wd:Q316952 a crm:E21_Person,
         foaf:Person ;
@@ -115,14 +123,6 @@ wd:Q316952 a crm:E21_Person,
     schema:knowsAbout wd:Q539067 ;
     schema:name "Hattori Hanzō" .
 
-wd:Q3275530 a crm:E74_Group ;
-    dct:date "1487"^^xsd:gYear ;
-    dct:description "Historically associated above all with the Hattori clan and the Fujibayashi clan." ;
-    owl:sameAs dbr:Iga-ryū ;
-    schema:foundingLocation wd:Q1047128 ;
-    schema:knowsAbout wd:Q539067 ;
-    schema:name "Iga-ryū" .
-
 wd:Q4352873 a crm:E21_Person,
         foaf:Person ;
     schema:name "Udono Nagateru" .
@@ -133,6 +133,7 @@ wd:Q4432157 a crm:E21_Person,
 
 wd:Q860340 a crm:E22_Human-Made_Object,
         edm:ProvidedCHO ;
+    ninja:isAssociatedWithArchetype wd:Q9402 ;
     ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Originally a stabbing/thrusting tool rather than a throwing weapon; the \"thrown ninja knife\" image comes from modern fiction." ;
     crm:P43_has_dimension "20-30 centimetre" ;
@@ -144,13 +145,6 @@ wd:Q916714 a foaf:Organization,
         schema:Corporation ;
     schema:name "Sucker Punch Productions" .
 
-wd:Q171977 a crm:E21_Person,
-        foaf:Person ;
-    schema:name "Tokugawa Ieyasu" .
-
-wd:Q768158 a schema:AdministrativeArea ;
-    schema:name "Mikawa Province" .
-
 wd:Q1047128 a schema:AdministrativeArea,
         schema:Place ;
     dct:date "1871"^^xsd:gYear ;
@@ -161,6 +155,25 @@ wd:Q1047128 a schema:AdministrativeArea,
         viaf:252317211 ;
     schema:name "Iga Province" .
 
+wd:Q128196 a schema:AdministrativeArea ;
+    schema:name "Mie Prefecture" .
+
+wd:Q171977 a crm:E21_Person,
+        foaf:Person ;
+    schema:name "Tokugawa Ieyasu" .
+
+wd:Q3275530 a crm:E74_Group ;
+    dct:date "1487"^^xsd:gYear ;
+    dct:description "Historically associated above all with the Hattori clan and the Fujibayashi clan." ;
+    owl:sameAs dbr:Iga-ryū ;
+    schema:foundingLocation wd:Q1047128 ;
+    schema:knowsAbout wd:Q539067 ;
+    schema:name "Iga-ryū",
+        "伊賀流"@ja .
+
+wd:Q768158 a schema:AdministrativeArea ;
+    schema:name "Mikawa Province" .
+
 wd:Q9402 a skos:Concept ;
     dct:description "Defined more by skillset and function than by social rank or class; the identity could be adopted situationally rather than marking a fixed separate caste, and historical samurai are recorded taking on ninja roles." ;
     owl:sameAs dbr:Ninja ;
@@ -170,5 +183,6 @@ wd:Q9402 a skos:Concept ;
 wd:Q539067 a skos:Concept ;
     dct:description "Not a single unified martial art but a collective term for numerous distinct schools (ryūha), often family-based, whose techniques were historically transmitted primarily through oral instruction rather than a standardized curriculum." ;
     owl:sameAs dbr:Ninjutsu ;
-    schema:name "Ninjutsu" .
+    schema:name "Ninjutsu",
+        "忍術"@ja .
 

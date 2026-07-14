@@ -142,10 +142,11 @@
       <relation name="originates_in" active="#iga_ryu" passive="#iga_province"/>
       <relation name="teaches" active="#iga_ryu" passive="#ninjutsu"/>
       <relation name="documents" active="#bansenshukai" passive="#ninjutsu"/>
-      <relation name="location" active="#ninja_museum" passive="#iga_province"/>
+      <relation name="preserves" active="#bansenshukai" passive="#iga_ryu"/>
       <relation name="about" active="#ninja_museum" passive="#ninja"/>
       <relation name="displays" active="#ninja_museum" passive="#kunai"/>
       <relation name="used_by" active="#mizugumo" passive="#ninja"/>
+      <relation name="used_by" active="#kunai" passive="#ninja"/>
       <relation name="depicts" active="#ghost_tsushima" passive="#ninja"/>
       <relation name="had_participant" active="#kaminogo_siege" passive="#hattori_hanzo"/>
       <relation name="demonstrates" active="#kaminogo_siege" passive="#ninjutsu"/>

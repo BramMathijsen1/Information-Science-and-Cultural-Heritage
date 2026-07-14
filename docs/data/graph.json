@@ -1,14 +1,15 @@
 {
-  "generated_at": "2026-07-14T07:45:41+00:00",
+  "generated_at": "2026-07-14T08:08:48+00:00",
   "counts": {
     "entities": 18,
-    "relations": 27
+    "relations": 29
   },
   "subject": {
     "id": "hattori_hanzo",
     "qid": "Q316952",
     "uri": "http://www.wikidata.org/entity/Q316952",
     "label": "Hattori Hanzō",
+    "native_name": null,
     "type": "Person",
     "type_qname": "crm:E21_Person",
     "descriptions": [
@@ -23,6 +24,7 @@
       "qid": "Q806956",
       "uri": "http://www.wikidata.org/entity/Q806956",
       "label": "Bansenshūkai",
+      "native_name": "万川集海",
       "type": "Book",
       "type_qname": "schema:Book",
       "descriptions": [
@@ -37,6 +39,7 @@
       "qid": "Q42564798",
       "uri": "http://www.wikidata.org/entity/Q42564798",
       "label": "Ghost of Tsushima",
+      "native_name": null,
       "type": "Video Game",
       "type_qname": "schema:VideoGame",
       "descriptions": [],
@@ -47,6 +50,7 @@
       "qid": "Q1047128",
       "uri": "http://www.wikidata.org/entity/Q1047128",
       "label": "Iga Province",
+      "native_name": null,
       "type": "Region / Province",
       "type_qname": "schema:AdministrativeArea",
       "descriptions": [
@@ -59,6 +63,7 @@
       "qid": "Q3275530",
       "uri": "http://www.wikidata.org/entity/Q3275530",
       "label": "Iga-ryū",
+      "native_name": "伊賀流",
       "type": "Organization / School",
       "type_qname": "crm:E74_Group",
       "descriptions": [
@@ -71,6 +76,7 @@
       "qid": "Q860340",
       "uri": "http://www.wikidata.org/entity/Q860340",
       "label": "Kunai",
+      "native_name": null,
       "type": "Object",
       "type_qname": "crm:E22_Human-Made_Object",
       "descriptions": [
@@ -83,6 +89,7 @@
       "qid": "Q6884757",
       "uri": "http://www.wikidata.org/entity/Q6884757",
       "label": "Mizugumo",
+      "native_name": "水蜘蛛",
       "type": "Object",
       "type_qname": "crm:E22_Human-Made_Object",
       "descriptions": [
@@ -96,6 +103,7 @@
       "qid": "Q9402",
       "uri": "http://www.wikidata.org/entity/Q9402",
       "label": "Ninja",
+      "native_name": null,
       "type": "Concept",
       "type_qname": "skos:Concept",
       "descriptions": [
@@ -108,6 +116,7 @@
       "qid": "Q4306401",
       "uri": "http://www.wikidata.org/entity/Q4306401",
       "label": "Ninja Museum of Igaryu",
+      "native_name": "伊賀流忍者博物館",
       "type": "Museum",
       "type_qname": "schema:Museum",
       "descriptions": [
@@ -120,6 +129,7 @@
       "qid": "Q539067",
       "uri": "http://www.wikidata.org/entity/Q539067",
       "label": "Ninjutsu",
+      "native_name": "忍術",
       "type": "Concept",
       "type_qname": "skos:Concept",
       "descriptions": [
@@ -132,6 +142,7 @@
       "qid": "Q7510141",
       "uri": "http://www.wikidata.org/entity/Q7510141",
       "label": "Siege of Kaminogō Castle",
+      "native_name": null,
       "type": "Event",
       "type_qname": "schema:Event",
       "descriptions": [
@@ -146,6 +157,7 @@
       "qid": "Q4432157",
       "uri": "http://www.wikidata.org/entity/Q4432157",
       "label": "Hattori Masanari",
+      "native_name": null,
       "type": "Person",
       "type_qname": "crm:E21_Person",
       "descriptions": [],
@@ -156,6 +168,7 @@
       "qid": "Q11358375",
       "uri": "http://www.wikidata.org/entity/Q11358375",
       "label": "Kaminogō Castle",
+      "native_name": null,
       "type": "Landmark",
       "type_qname": "schema:LandmarksOrHistoricalBuildings",
       "descriptions": [],
@@ -166,6 +179,7 @@
       "qid": "Q128196",
       "uri": "http://www.wikidata.org/entity/Q128196",
       "label": "Mie Prefecture",
+      "native_name": null,
       "type": "Region / Province",
       "type_qname": "schema:AdministrativeArea",
       "descriptions": [],
@@ -176,6 +190,7 @@
       "qid": "Q768158",
       "uri": "http://www.wikidata.org/entity/Q768158",
       "label": "Mikawa Province",
+      "native_name": null,
       "type": "Region / Province",
       "type_qname": "schema:AdministrativeArea",
       "descriptions": [],
@@ -186,6 +201,7 @@
       "qid": "Q916714",
       "uri": "http://www.wikidata.org/entity/Q916714",
       "label": "Sucker Punch Productions",
+      "native_name": null,
       "type": "Corporation",
       "type_qname": "schema:Corporation",
       "descriptions": [],
@@ -196,6 +212,7 @@
       "qid": "Q171977",
       "uri": "http://www.wikidata.org/entity/Q171977",
       "label": "Tokugawa Ieyasu",
+      "native_name": null,
       "type": "Person",
       "type_qname": "crm:E21_Person",
       "descriptions": [],
@@ -206,6 +223,7 @@
       "qid": "Q4352873",
       "uri": "http://www.wikidata.org/entity/Q4352873",
       "label": "Udono Nagateru",
+      "native_name": null,
       "type": "Person",
       "type_qname": "crm:E21_Person",
       "descriptions": [],
@@ -219,6 +237,13 @@
       "predicate": "dct:subject",
       "object": "ninjutsu",
       "object_label": "Ninjutsu"
+    },
+    {
+      "subject": "bansenshukai",
+      "subject_label": "Bansenshūkai",
+      "predicate": "ninja:preservesKnowledgeOf",
+      "object": "iga_ryu",
+      "object_label": "Iga-ryū"
     },
     {
       "subject": "ghost_tsushima",
@@ -321,6 +346,13 @@
     {
       "subject": "kunai",
       "subject_label": "Kunai",
+      "predicate": "ninja:isAssociatedWithArchetype",
+      "object": "ninja",
+      "object_label": "Ninja"
+    },
+    {
+      "subject": "kunai",
+      "subject_label": "Kunai",
       "predicate": "ninja:isToolOfDiscipline",
       "object": "ninjutsu",
       "object_label": "Ninjutsu"
@@ -364,8 +396,8 @@
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
       "predicate": "schema:containedInPlace",
-      "object": "iga_province",
-      "object_label": "Iga Province"
+      "object": "mie_prefecture",
+      "object_label": "Mie Prefecture"
     },
     {
       "subject": "kaminogo_siege",

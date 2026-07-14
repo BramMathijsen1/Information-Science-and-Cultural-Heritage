@@ -252,6 +252,9 @@
                 <mxCell id="eop6" value="dct:subject" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Book" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="eop21" value="ninja:preservesKnowledgeOf" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Book" target="Group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="eop7" value="schema:containedInPlace" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Place" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>

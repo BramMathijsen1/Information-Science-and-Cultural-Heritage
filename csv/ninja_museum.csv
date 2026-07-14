@@ -2,14 +2,12 @@ subject,predicate,object
 ninja_museum,has type,museum
 ninja_museum,has title,Ninja Museum of Igaryu
 ninja_museum,has foundation date,1964
-ninja_museum,location,iga_province
+ninja_museum,location,mie_prefecture
 ninja_museum,has note,Located near Iga Ueno Castle; includes a model ninja village open to tours.
 #
 # === Conceptual model — ninja_museum = schema:Museum ===
 # has type            -> rdf:type              (class: schema:Museum)
 # has title           -> schema:name           schema:Museum -> Literal
 # has foundation date -> schema:foundingDate   schema:Museum -> xsd:gYear
-# location            -> dct:spatial            schema:Museum -> schema:Place
-#   (same predicate name/property as the TEI relation "location" already
-#    stated on this entity, so the two triples merge into one)
+# location            -> schema:containedInPlace schema:Museum -> schema:Place
 # has note            -> dct:description        schema:Museum -> Literal

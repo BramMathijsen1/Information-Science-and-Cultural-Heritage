@@ -2,11 +2,6 @@ subject,predicate,object
 mizugumo,has type,object
 mizugumo,has title,Mizugumo
 mizugumo,is used in,ninjutsu
+mizugumo,has material,Wood
 mizugumo,has note,Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device.
 mizugumo,has note,"Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear."
-#
-# === Conceptual model — mizugumo = crm:E22_Human-Made_Object ===
-# has type   -> rdf:type         (class: crm:E22_Human-Made_Object)
-# has title  -> schema:name      crm:E22_Human-Made_Object -> Literal
-# is used in -> dct:relation     crm:E22_Human-Made_Object -> skos:Concept
-# has note   -> dct:description  crm:E22_Human-Made_Object -> Literal

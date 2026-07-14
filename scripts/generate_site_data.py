@@ -63,7 +63,9 @@ def build_entity(g, entity_id):
     primary_type = next((t for t in types if not t.startswith(SECONDARY_PREFIXES)), types[0] if types else None)
     type_label = CLASS_LABELS.get(primary_type, primary_type or "Unknown")
 
-    label = str(next(g.objects(uri, NAME_PROP), entity_id))
+    names = list(g.objects(uri, NAME_PROP))
+    label = str(next((n for n in names if n.language is None), names[0] if names else entity_id))
+    native_name = next((str(n) for n in names if n.language == "ja"), None)
     descriptions = [str(o) for o in g.objects(uri, DESCRIPTION_PROP)]
 
     return {
@@ -71,6 +73,7 @@ def build_entity(g, entity_id):
         "qid": WIKIDATA[entity_id],
         "uri": str(uri),
         "label": label,
+        "native_name": native_name,
         "type": type_label,
         "type_qname": primary_type,
         "descriptions": descriptions,

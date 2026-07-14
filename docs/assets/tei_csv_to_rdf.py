@@ -21,6 +21,18 @@ EDM = Namespace("http://www.europeana.eu/schemas/edm/")
 
 EDM_PROVIDED_CHO_IDS = {"kunai", "mizugumo", "bansenshukai"}
 
+# Japanese-script forms given inline via <foreign xml:lang="ja"> next to each
+# entity's own @ref-bearing name element in the TEI body prose — not
+# attribute-accessible the way the Wikidata id is, so kept as a small
+# verified list rather than a fragile proximity-based parse.
+JAPANESE_NAMES = {
+    "ninjutsu": "忍術",
+    "iga_ryu": "伊賀流",
+    "bansenshukai": "万川集海",
+    "mizugumo": "水蜘蛛",
+    "ninja_museum": "伊賀流忍者博物館",
+}
+
 TEI = "{http://www.tei-c.org/ns/1.0}"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
 
@@ -136,6 +148,7 @@ RELATIONS = {
     "originates_in": SCHEMA.foundingLocation,
     "teaches": SCHEMA.knowsAbout,
     "documents": DCT.subject,
+    "preserves": NINJA.preservesKnowledgeOf,
     "about": DCT.subject,
     "displays": CRM.P50i_is_current_keeper_of,
     "used_by": NINJA.isAssociatedWithArchetype,
@@ -241,6 +254,27 @@ def declare_exemplifies_discipline(g):
         lang="en")))
 
 
+def declare_preserves_knowledge_of(g):
+
+    g.add((NINJA.preservesKnowledgeOf, RDF.type, OWL.ObjectProperty))
+    g.add((NINJA.preservesKnowledgeOf, RDFS.domain, SCHEMA.Book))
+    g.add((NINJA.preservesKnowledgeOf, RDFS.range, CRM.E74_Group))
+    g.add((NINJA.preservesKnowledgeOf, RDFS.label,
+           Literal("preserves knowledge of", lang="en")))
+    g.add((NINJA.preservesKnowledgeOf, RDFS.comment, Literal(
+        "A written work compiled specifically to safeguard a school's "
+        "practices for the future, distinct from merely documenting or "
+        "being about them. dct:subject/crm:P70_documents both describe a "
+        "neutral act of recording; this is a stronger, intentional claim "
+        "of preservation against loss. CIDOC-CRM's own literature notes "
+        "it 'lacks support for higher-level conceptual structures "
+        "associated with patterned forms of (intangible) heritage: "
+        "recurring activities, practices, collective behavior, "
+        "tradition' — no property in CRM, schema.org, DCT, or RDA models "
+        "this act specifically.",
+        lang="en")))
+
+
 def declare_tool_of_discipline(g):
 
     g.add((NINJA.isToolOfDiscipline, RDF.type, OWL.ObjectProperty))
@@ -287,6 +321,7 @@ def parse_tei(g, tei_file):
     declare_embodies_archetype(g)
     declare_associated_with_archetype(g)
     declare_exemplifies_discipline(g)
+    declare_preserves_knowledge_of(g)
     tree = ET.parse(tei_file)
     root = tree.getroot()
 
@@ -308,6 +343,8 @@ def parse_tei(g, tei_file):
         name = get_name(el)
         if name:
             g.add((entity_uri, SCHEMA.name, Literal(name)))
+        if xml_id in JAPANESE_NAMES:
+            g.add((entity_uri, SCHEMA.name, Literal(JAPANESE_NAMES[xml_id], lang="ja")))
 
         for extra_uri in SAME_AS.get(xml_id, []):
             g.add((entity_uri, OWL.sameAs, URIRef(extra_uri)))
