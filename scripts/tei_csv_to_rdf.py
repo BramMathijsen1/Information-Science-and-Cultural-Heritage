@@ -137,7 +137,7 @@ RELATIONS = {
     "teaches": SCHEMA.knowsAbout,
     "documents": DCT.subject,
     "about": DCT.subject,
-    "displays": NINJA.displaysArtifact,
+    "displays": CRM.P50i_is_current_keeper_of,
     "used_by": NINJA.isAssociatedWithArchetype,
     "depicts": FOAF.depicts,
     "had_participant": CRM.P11_had_participant,
@@ -214,17 +214,6 @@ def declare_embodies_archetype(g):
         lang="en")))
 
 
-def declare_displays_artifact(g):
-
-    g.add((NINJA.displaysArtifact, RDF.type, OWL.ObjectProperty))
-    g.add((NINJA.displaysArtifact, RDFS.domain, SCHEMA.Museum))
-    g.add((NINJA.displaysArtifact, RDFS.range, E22_HUMAN_MADE_OBJECT))
-    g.add((NINJA.displaysArtifact, RDFS.label, Literal("displays artifact", lang="en")))
-    g.add((NINJA.displaysArtifact, RDFS.comment, Literal(
-        "I could not find any comparable relation",
-        lang="en")))
-
-
 def declare_associated_with_archetype(g):
 
     g.add((NINJA.isAssociatedWithArchetype, RDF.type, OWL.ObjectProperty))
@@ -296,7 +285,6 @@ def get_name(el):
 
 def parse_tei(g, tei_file):
     declare_embodies_archetype(g)
-    declare_displays_artifact(g)
     declare_associated_with_archetype(g)
     declare_exemplifies_discipline(g)
     tree = ET.parse(tei_file)

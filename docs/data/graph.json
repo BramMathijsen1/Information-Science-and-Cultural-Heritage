@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T07:29:37+00:00",
+  "generated_at": "2026-07-14T07:38:38+00:00",
   "counts": {
     "entities": 18,
     "relations": 27
@@ -349,16 +349,16 @@
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "dct:subject",
-      "object": "ninja",
-      "object_label": "Ninja"
+      "predicate": "crm:P50i_is_current_keeper_of",
+      "object": "kunai",
+      "object_label": "Kunai"
     },
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "ninja:displaysArtifact",
-      "object": "kunai",
-      "object_label": "Kunai"
+      "predicate": "dct:subject",
+      "object": "ninja",
+      "object_label": "Ninja"
     },
     {
       "subject": "ninja_museum",

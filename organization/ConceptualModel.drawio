@@ -258,7 +258,7 @@
                 <mxCell id="eop8" value="dct:subject" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="eop9" value="ninja:displaysArtifact" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Object" edge="1">
+                <mxCell id="eop9" value="crm:P50i_is_current&lt;br&gt;_keeper_of" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Object" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop10" value="ninja:isAssociatedWithArchetype&lt;br&gt;ninja:isToolOfDiscipline" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Object" target="Concept" edge="1">

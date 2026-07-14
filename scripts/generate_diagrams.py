@@ -94,14 +94,11 @@ def render_node(cell, geom):
     return shape + "".join(text_parts)
 
 
-def render_edge(cell, node_geom):
+def render_edge(cell, node_geom, loop_index=0):
     source, target = cell.get("source"), cell.get("target")
     if source not in node_geom or target not in node_geom:
         return ""
     sx, sy, sw, sh = node_geom[source]
-    tx, ty, tw, th = node_geom[target]
-    x1, y1 = sx + sw / 2, sy + sh / 2
-    x2, y2 = tx + tw / 2, ty + th / 2
 
     style = parse_style(cell.get("style"))
     stroke = style.get("strokeColor", "#666666")
@@ -109,15 +106,32 @@ def render_edge(cell, node_geom):
     font_size = float(style.get("fontSize", "16"))
     marker = "arrow-open" if style.get("endArrow") == "open" else "arrow-block"
 
-    line = (f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
-            f'stroke="{stroke}" stroke-width="1.5" marker-end="url(#{marker})"/>')
+    if source == target:
+        # Straight source-center-to-target-center geometry collapses to a
+        # point for self-loops; bulge a loop out from the right edge instead.
+        # Successive loops on the same box step further out so they don't
+        # render exactly on top of each other.
+        loop_r = max(sw, sh) * 0.35 + loop_index * 90
+        x_edge = sx + sw
+        y1, y2 = sy + sh * 0.3, sy + sh * 0.7
+        cx = x_edge + loop_r
+        line = (f'<path d="M {x_edge:.0f} {y1:.0f} C {cx:.0f} {y1:.0f}, '
+                f'{cx:.0f} {y2:.0f}, {x_edge:.0f} {y2:.0f}" fill="none" '
+                f'stroke="{stroke}" stroke-width="1.5" marker-end="url(#{marker})"/>')
+        mx, my = x_edge + loop_r, (y1 + y2) / 2
+    else:
+        tx, ty, tw, th = node_geom[target]
+        x1, y1 = sx + sw / 2, sy + sh / 2
+        x2, y2 = tx + tw / 2, ty + th / 2
+        line = (f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
+                f'stroke="{stroke}" stroke-width="1.5" marker-end="url(#{marker})"/>')
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
 
     label = (cell.get("value") or "").strip()
     if not label:
         return line
 
     lines = [l for l in label.split("<br>") if l != ""] or [label]
-    mx, my = (x1 + x2) / 2, (y1 + y2) / 2
     label_bg = style.get("labelBackgroundColor", "none")
     rect = ""
     if label_bg != "none":
@@ -165,7 +179,15 @@ def convert(drawio_path, title, bg):
             edge_cells.append(cell)
 
     node_svg = [render_node(cell, geom) for cell, geom in vertex_cells]
-    edge_svg = [render_edge(cell, node_geom) for cell in edge_cells]
+    loop_counts = {}
+    edge_svg = []
+    for cell in edge_cells:
+        source = cell.get("source")
+        loop_index = 0
+        if source == cell.get("target"):
+            loop_index = loop_counts.get(source, 0)
+            loop_counts[source] = loop_index + 1
+        edge_svg.append(render_edge(cell, node_geom, loop_index))
 
     max_x = max((x + w for x, y, w, h in node_geom.values()), default=800)
     max_y = max((y + h for x, y, w, h in node_geom.values()), default=800)

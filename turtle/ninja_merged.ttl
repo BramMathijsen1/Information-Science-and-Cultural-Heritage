@@ -13,12 +13,6 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ninja:displaysArtifact a owl:ObjectProperty ;
-    rdfs:label "displays artifact"@en ;
-    rdfs:comment "I could not find any comparable relation"@en ;
-    rdfs:domain schema:Museum ;
-    rdfs:range crm:E22_Human-Made_Object .
-
 ninja:embodiesArchetype a owl:ObjectProperty ;
     rdfs:label "embodies archetype"@en ;
     rdfs:comment "A real person who became the cultural archetype/exemplar of a legendary identity."@en ;
@@ -61,9 +55,9 @@ wd:Q42564798 a schema:VideoGame ;
     schema:publisher "Sony Interactive Entertainment" .
 
 wd:Q4306401 a schema:Museum ;
-    ninja:displaysArtifact wd:Q860340 ;
     dct:description "Located near Iga Ueno Castle; includes a model ninja village open to tours." ;
     dct:subject wd:Q9402 ;
+    crm:P50i_is_current_keeper_of wd:Q860340 ;
     owl:sameAs dbr:Ninja_Museum_of_Igaryu ;
     schema:containedInPlace wd:Q1047128 ;
     schema:foundingDate "1964"^^xsd:gYear ;
