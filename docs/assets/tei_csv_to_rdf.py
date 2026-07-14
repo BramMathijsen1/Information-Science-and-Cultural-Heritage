@@ -137,11 +137,11 @@ RELATIONS = {
     "teaches": SCHEMA.knowsAbout,
     "documents": DCT.subject,
     "about": DCT.subject,
-    "displays": DCT.relation,
-    "used_by": DCT.relation,
+    "displays": NINJA.displaysArtifact,
+    "used_by": NINJA.isAssociatedWithArchetype,
     "depicts": FOAF.depicts,
     "had_participant": CRM.P11_had_participant,
-    "demonstrates": DCT.relation,
+    "demonstrates": NINJA.exemplifiesDiscipline,
 }
 
 TYPE_CLASS = {
@@ -179,7 +179,7 @@ PROP = {
     "is retainer of": NINJA.isVassalOf,
     "is succeeded by": DCT.isReplacedBy,
     "relates to": SKOS.related,
-    "is used in": DCT.relation,
+    "is used in": NINJA.isToolOfDiscipline,
     "had participant": CRM.P11_had_participant,
     "has developer": FOAF.maker,
     "is about": DCT.subject,
@@ -198,12 +198,7 @@ def declare_vassal_of(g):
     g.add((NINJA.isVassalOf, RDFS.range, CRM.E21_Person))
     g.add((NINJA.isVassalOf, RDFS.label, Literal("is vassal of", lang="en")))
     g.add((NINJA.isVassalOf, RDFS.comment, Literal(
-        "A feudal-era person's ongoing service obligation to their lord. "
-        "No CIDOC-CRM or schema.org property models this without reifying "
-        "it as its own Activity/Employment event; EAC-CPF's cpfRelation is "
-        "the closest existing model (built for person/family/corporate-body "
-        "relations) but its own relation-type vocabulary has no term this "
-        "specific, so this narrower property is declared as its sub-property.",
+        "A feudal-era person's ongoing service obligation to their lord.",
         lang="en")))
 
 
@@ -215,10 +210,56 @@ def declare_embodies_archetype(g):
     g.add((NINJA.embodiesArchetype, RDFS.label, Literal("embodies archetype", lang="en")))
     g.add((NINJA.embodiesArchetype, RDFS.comment, Literal(
         "A real person who became the cultural archetype/exemplar of a "
-        "legendary identity. Declared as a new term: no existing property "
-        "in CIDOC-CRM, schema.org, SKOS or EAC-CPF models a person-to-"
-        "concept exemplification relation without a forced domain/range "
-        "mismatch.",
+        "legendary identity.",
+        lang="en")))
+
+
+def declare_displays_artifact(g):
+
+    g.add((NINJA.displaysArtifact, RDF.type, OWL.ObjectProperty))
+    g.add((NINJA.displaysArtifact, RDFS.domain, SCHEMA.Museum))
+    g.add((NINJA.displaysArtifact, RDFS.range, E22_HUMAN_MADE_OBJECT))
+    g.add((NINJA.displaysArtifact, RDFS.label, Literal("displays artifact", lang="en")))
+    g.add((NINJA.displaysArtifact, RDFS.comment, Literal(
+        "I could not find any comparable relation",
+        lang="en")))
+
+
+def declare_associated_with_archetype(g):
+
+    g.add((NINJA.isAssociatedWithArchetype, RDF.type, OWL.ObjectProperty))
+    g.add((NINJA.isAssociatedWithArchetype, RDFS.domain, E22_HUMAN_MADE_OBJECT))
+    g.add((NINJA.isAssociatedWithArchetype, RDFS.range, SKOS.Concept))
+    g.add((NINJA.isAssociatedWithArchetype, RDFS.label,
+           Literal("is associated with archetype", lang="en")))
+    g.add((NINJA.isAssociatedWithArchetype, RDFS.comment, Literal(
+        "A physical object's association with a legendary identity/"
+        "archetype (Mizugumo, the water-crossing device, with the Ninja "
+        "archetype), rather than with a real agent who could formally "
+        "'use' it, and its also not a class. There exists Concept to concept, but no property fits an Object-to-Concept subject",
+        lang="en")))
+
+
+def declare_exemplifies_discipline(g):
+
+    g.add((NINJA.exemplifiesDiscipline, RDF.type, OWL.ObjectProperty))
+    g.add((NINJA.exemplifiesDiscipline, RDFS.domain, SCHEMA.Event))
+    g.add((NINJA.exemplifiesDiscipline, RDFS.range, SKOS.Concept))
+    g.add((NINJA.exemplifiesDiscipline, RDFS.label,
+           Literal("exemplifies discipline", lang="en")))
+    g.add((NINJA.exemplifiesDiscipline, RDFS.comment, Literal(
+        "This is not nesseceraly a bsubject but it exemplifies a dicipline.",
+        lang="en")))
+
+
+def declare_tool_of_discipline(g):
+
+    g.add((NINJA.isToolOfDiscipline, RDF.type, OWL.ObjectProperty))
+    g.add((NINJA.isToolOfDiscipline, RDFS.domain, E22_HUMAN_MADE_OBJECT))
+    g.add((NINJA.isToolOfDiscipline, RDFS.range, SKOS.Concept))
+    g.add((NINJA.isToolOfDiscipline, RDFS.label, Literal("is tool of discipline", lang="en")))
+    g.add((NINJA.isToolOfDiscipline, RDFS.comment, Literal(
+        "This is specifically a tool, so thats why it got his own relation",
         lang="en")))
 
 
@@ -255,6 +296,9 @@ def get_name(el):
 
 def parse_tei(g, tei_file):
     declare_embodies_archetype(g)
+    declare_displays_artifact(g)
+    declare_associated_with_archetype(g)
+    declare_exemplifies_discipline(g)
     tree = ET.parse(tei_file)
     root = tree.getroot()
 
@@ -292,6 +336,7 @@ def parse_tei(g, tei_file):
 
 def parse_csv(g, csv_dir):
     declare_vassal_of(g)
+    declare_tool_of_discipline(g)
     for filename in sorted(os.listdir(csv_dir)):
         if not filename.endswith(".csv"):
             continue

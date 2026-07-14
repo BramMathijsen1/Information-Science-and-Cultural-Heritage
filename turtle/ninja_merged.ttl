@@ -13,15 +13,39 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ninja:displaysArtifact a owl:ObjectProperty ;
+    rdfs:label "displays artifact"@en ;
+    rdfs:comment "I could not find any comparable relation"@en ;
+    rdfs:domain schema:Museum ;
+    rdfs:range crm:E22_Human-Made_Object .
+
 ninja:embodiesArchetype a owl:ObjectProperty ;
     rdfs:label "embodies archetype"@en ;
-    rdfs:comment "A real person who became the cultural archetype/exemplar of a legendary identity. Declared as a new term: no existing property in CIDOC-CRM, schema.org, SKOS or EAC-CPF models a person-to-concept exemplification relation without a forced domain/range mismatch."@en ;
+    rdfs:comment "A real person who became the cultural archetype/exemplar of a legendary identity."@en ;
     rdfs:domain crm:E21_Person ;
+    rdfs:range skos:Concept .
+
+ninja:exemplifiesDiscipline a owl:ObjectProperty ;
+    rdfs:label "exemplifies discipline"@en ;
+    rdfs:comment "This is not nesseceraly a bsubject but it exemplifies a dicipline."@en ;
+    rdfs:domain schema:Event ;
+    rdfs:range skos:Concept .
+
+ninja:isAssociatedWithArchetype a owl:ObjectProperty ;
+    rdfs:label "is associated with archetype"@en ;
+    rdfs:comment "A physical object's association with a legendary identity/archetype (Mizugumo, the water-crossing device, with the Ninja archetype), rather than with a real agent who could formally 'use' it, and its also not a class. There exists Concept to concept, but no property fits an Object-to-Concept subject"@en ;
+    rdfs:domain crm:E22_Human-Made_Object ;
+    rdfs:range skos:Concept .
+
+ninja:isToolOfDiscipline a owl:ObjectProperty ;
+    rdfs:label "is tool of discipline"@en ;
+    rdfs:comment "This is specifically a tool, so thats why it got his own relation"@en ;
+    rdfs:domain crm:E22_Human-Made_Object ;
     rdfs:range skos:Concept .
 
 ninja:isVassalOf a owl:ObjectProperty ;
     rdfs:label "is vassal of"@en ;
-    rdfs:comment "A feudal-era person's ongoing service obligation to their lord. No CIDOC-CRM or schema.org property models this without reifying it as its own Activity/Employment event; EAC-CPF's cpfRelation is the closest existing model (built for person/family/corporate-body relations) but its own relation-type vocabulary has no term this specific, so this narrower property is declared as its sub-property."@en ;
+    rdfs:comment "A feudal-era person's ongoing service obligation to their lord."@en ;
     rdfs:domain crm:E21_Person ;
     rdfs:range crm:E21_Person ;
     rdfs:subPropertyOf eac-cpf:cpfRelation .
@@ -37,8 +61,8 @@ wd:Q42564798 a schema:VideoGame ;
     schema:publisher "Sony Interactive Entertainment" .
 
 wd:Q4306401 a schema:Museum ;
+    ninja:displaysArtifact wd:Q860340 ;
     dct:description "Located near Iga Ueno Castle; includes a model ninja village open to tours." ;
-    dct:relation wd:Q860340 ;
     dct:subject wd:Q9402 ;
     owl:sameAs dbr:Ninja_Museum_of_Igaryu ;
     schema:containedInPlace wd:Q1047128 ;
@@ -47,17 +71,17 @@ wd:Q4306401 a schema:Museum ;
 
 wd:Q6884757 a crm:E22_Human-Made_Object,
         edm:ProvidedCHO ;
+    ninja:isAssociatedWithArchetype wd:Q9402 ;
+    ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear.",
         "Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device." ;
-    dct:relation wd:Q539067,
-        wd:Q9402 ;
     owl:sameAs dbr:Mizugumo ;
     schema:name "Mizugumo" .
 
 wd:Q7510141 a schema:Event ;
+    ninja:exemplifiesDiscipline wd:Q539067 ;
     dct:date "1562"^^xsd:gYear ;
     dct:description "Matsudaira Motoyasu's forces took hostages to trade for his own family then held by the Imagawa clan." ;
-    dct:relation wd:Q539067 ;
     crm:P11_had_participant wd:Q171977,
         wd:Q316952,
         wd:Q4352873 ;
@@ -115,8 +139,8 @@ wd:Q4432157 a crm:E21_Person,
 
 wd:Q860340 a crm:E22_Human-Made_Object,
         edm:ProvidedCHO ;
+    ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Originally a stabbing/thrusting tool rather than a throwing weapon; the \"thrown ninja knife\" image comes from modern fiction." ;
-    dct:relation wd:Q539067 ;
     crm:P43_has_dimension "20-30 centimetre" ;
     crm:P45_consists_of "soft iron" ;
     owl:sameAs dbr:Kunai ;

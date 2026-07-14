@@ -116,15 +116,21 @@ def render_edge(cell, node_geom):
     if not label:
         return line
 
+    lines = [l for l in label.split("<br>") if l != ""] or [label]
     mx, my = (x1 + x2) / 2, (y1 + y2) / 2
     label_bg = style.get("labelBackgroundColor", "none")
     rect = ""
     if label_bg != "none":
-        w = max(font_size * 2, len(label) * font_size * 0.6 + font_size)
-        h = font_size * 1.5
+        w = max(font_size * 2, max(len(l) for l in lines) * font_size * 0.6 + font_size)
+        h = font_size * 1.5 * len(lines)
         rect = f'<rect x="{mx - w/2:.0f}" y="{my - h/2:.0f}" width="{w:.0f}" height="{h:.0f}" fill="{label_bg}" fill-opacity="0.92"/>'
-    text = (f'<text x="{mx:.0f}" y="{my + font_size * 0.32:.0f}" text-anchor="middle" font-size="{font_size:.0f}" '
-            f'fill="{font_color}" font-family="{FONT}">{esc(label)}</text>')
+    n = len(lines)
+    start_y = my - (n - 1) * (font_size * 0.62)
+    text = "".join(
+        f'<text x="{mx:.0f}" y="{start_y + i * font_size * 1.24 + font_size * 0.32:.0f}" text-anchor="middle" '
+        f'font-size="{font_size:.0f}" fill="{font_color}" font-family="{FONT}">{esc(l)}</text>'
+        for i, l in enumerate(lines)
+    )
     return line + rect + text
 
 

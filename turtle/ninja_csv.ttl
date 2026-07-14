@@ -10,9 +10,15 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ninja:isToolOfDiscipline a owl:ObjectProperty ;
+    rdfs:label "is tool of discipline"@en ;
+    rdfs:comment "This is specifically a tool, so thats why it got his own relation"@en ;
+    rdfs:domain crm:E22_Human-Made_Object ;
+    rdfs:range skos:Concept .
+
 ninja:isVassalOf a owl:ObjectProperty ;
     rdfs:label "is vassal of"@en ;
-    rdfs:comment "A feudal-era person's ongoing service obligation to their lord. No CIDOC-CRM or schema.org property models this without reifying it as its own Activity/Employment event; EAC-CPF's cpfRelation is the closest existing model (built for person/family/corporate-body relations) but its own relation-type vocabulary has no term this specific, so this narrower property is declared as its sub-property."@en ;
+    rdfs:comment "A feudal-era person's ongoing service obligation to their lord."@en ;
     rdfs:domain crm:E21_Person ;
     rdfs:range crm:E21_Person ;
     rdfs:subPropertyOf eac-cpf:cpfRelation .
@@ -46,9 +52,9 @@ wd:Q4306401 a schema:Museum ;
     schema:name "Ninja Museum of Igaryu" .
 
 wd:Q6884757 a crm:E22_Human-Made_Object ;
+    ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Despite depictions as shoes for walking on water, the design more plausibly centred on a wooden platform meant to be sat on rather than stood on, functioning as a buoyancy aid rather than footwear.",
         "Per the Bansenshūkai ninja of the Fujibayashi family reportedly used this water-flotation device." ;
-    dct:relation wd:Q539067 ;
     schema:name "Mizugumo" .
 
 wd:Q7510141 a schema:Event ;
@@ -67,8 +73,8 @@ wd:Q806956 a schema:Book ;
     schema:name "Bansenshūkai" .
 
 wd:Q860340 a crm:E22_Human-Made_Object ;
+    ninja:isToolOfDiscipline wd:Q539067 ;
     dct:description "Originally a stabbing/thrusting tool rather than a throwing weapon; the \"thrown ninja knife\" image comes from modern fiction." ;
-    dct:relation wd:Q539067 ;
     crm:P43_has_dimension "20-30 centimetre" ;
     crm:P45_consists_of "soft iron" ;
     schema:name "Kunai" .

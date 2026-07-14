@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T05:00:13+00:00",
+  "generated_at": "2026-07-14T07:29:37+00:00",
   "counts": {
     "entities": 18,
     "relations": 27
@@ -321,21 +321,21 @@
     {
       "subject": "kunai",
       "subject_label": "Kunai",
-      "predicate": "dct:relation",
+      "predicate": "ninja:isToolOfDiscipline",
       "object": "ninjutsu",
       "object_label": "Ninjutsu"
     },
     {
       "subject": "mizugumo",
       "subject_label": "Mizugumo",
-      "predicate": "dct:relation",
+      "predicate": "ninja:isAssociatedWithArchetype",
       "object": "ninja",
       "object_label": "Ninja"
     },
     {
       "subject": "mizugumo",
       "subject_label": "Mizugumo",
-      "predicate": "dct:relation",
+      "predicate": "ninja:isToolOfDiscipline",
       "object": "ninjutsu",
       "object_label": "Ninjutsu"
     },
@@ -349,16 +349,16 @@
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "dct:relation",
-      "object": "kunai",
-      "object_label": "Kunai"
+      "predicate": "dct:subject",
+      "object": "ninja",
+      "object_label": "Ninja"
     },
     {
       "subject": "ninja_museum",
       "subject_label": "Ninja Museum of Igaryu",
-      "predicate": "dct:subject",
-      "object": "ninja",
-      "object_label": "Ninja"
+      "predicate": "ninja:displaysArtifact",
+      "object": "kunai",
+      "object_label": "Kunai"
     },
     {
       "subject": "ninja_museum",
@@ -391,7 +391,7 @@
     {
       "subject": "kaminogo_siege",
       "subject_label": "Siege of Kaminogō Castle",
-      "predicate": "dct:relation",
+      "predicate": "ninja:exemplifiesDiscipline",
       "object": "ninjutsu",
       "object_label": "Ninjutsu"
     },

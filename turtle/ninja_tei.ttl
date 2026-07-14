@@ -11,10 +11,28 @@
 @prefix viaf: <https://viaf.org/viaf/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
+ninja:displaysArtifact a owl:ObjectProperty ;
+    rdfs:label "displays artifact"@en ;
+    rdfs:comment "I could not find any comparable relation"@en ;
+    rdfs:domain schema:Museum ;
+    rdfs:range crm:E22_Human-Made_Object .
+
 ninja:embodiesArchetype a owl:ObjectProperty ;
     rdfs:label "embodies archetype"@en ;
-    rdfs:comment "A real person who became the cultural archetype/exemplar of a legendary identity. Declared as a new term: no existing property in CIDOC-CRM, schema.org, SKOS or EAC-CPF models a person-to-concept exemplification relation without a forced domain/range mismatch."@en ;
+    rdfs:comment "A real person who became the cultural archetype/exemplar of a legendary identity."@en ;
     rdfs:domain crm:E21_Person ;
+    rdfs:range skos:Concept .
+
+ninja:exemplifiesDiscipline a owl:ObjectProperty ;
+    rdfs:label "exemplifies discipline"@en ;
+    rdfs:comment "This is not nesseceraly a bsubject but it exemplifies a dicipline."@en ;
+    rdfs:domain schema:Event ;
+    rdfs:range skos:Concept .
+
+ninja:isAssociatedWithArchetype a owl:ObjectProperty ;
+    rdfs:label "is associated with archetype"@en ;
+    rdfs:comment "A physical object's association with a legendary identity/archetype (Mizugumo, the water-crossing device, with the Ninja archetype), rather than with a real agent who could formally 'use' it, and its also not a class. There exists Concept to concept, but no property fits an Object-to-Concept subject"@en ;
+    rdfs:domain crm:E22_Human-Made_Object ;
     rdfs:range skos:Concept .
 
 wd:Q42564798 a schema:VideoGame ;
@@ -23,7 +41,7 @@ wd:Q42564798 a schema:VideoGame ;
     schema:name "Ghost of Tsushima" .
 
 wd:Q4306401 a schema:Museum ;
-    dct:relation wd:Q860340 ;
+    ninja:displaysArtifact wd:Q860340 ;
     dct:subject wd:Q9402 ;
     owl:sameAs dbr:Ninja_Museum_of_Igaryu ;
     schema:containedInPlace wd:Q1047128 ;
@@ -31,12 +49,12 @@ wd:Q4306401 a schema:Museum ;
 
 wd:Q6884757 a crm:E22_Human-Made_Object,
         edm:ProvidedCHO ;
-    dct:relation wd:Q9402 ;
+    ninja:isAssociatedWithArchetype wd:Q9402 ;
     owl:sameAs dbr:Mizugumo ;
     schema:name "Mizugumo" .
 
 wd:Q7510141 a schema:Event ;
-    dct:relation wd:Q539067 ;
+    ninja:exemplifiesDiscipline wd:Q539067 ;
     crm:P11_had_participant wd:Q316952 ;
     owl:sameAs dbr:Siege_of_Kaminogō_Castle ;
     schema:name "Siege of Kaminogō Castle" .
