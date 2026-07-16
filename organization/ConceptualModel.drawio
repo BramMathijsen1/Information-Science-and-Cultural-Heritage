@@ -11,7 +11,7 @@
                     <mxGeometry x="2847" y="625" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Concept" value="skos:Concept" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2262" y="1165" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2327" y="1040" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Place" value="schema:Place" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="2233" y="1845" width="480" height="190" as="geometry"/>
@@ -253,7 +253,9 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop21" value="ninja:preservesKnowledgeOf" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Book" target="Group" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="0.0601" y="65" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="eop7" value="schema:containedInPlace" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Museum" target="Place" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -299,7 +301,9 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="eop18" value="foaf:maker" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="VideoGame" target="Group" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="0.0527" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="eop19" value="dct:subject" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="VideoGame" target="Concept" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
