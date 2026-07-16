@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Conceptual Model" id="ninja-conceptual-1">
-        <mxGraphModel dx="2290" dy="1498" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="3131" dy="1597" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -11,7 +11,7 @@
                     <mxGeometry x="2665" y="625" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Concept" value="skos:Concept" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2210" y="1018" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2275" y="1110" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Place" value="schema:Place" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="2233" y="1845" width="480" height="190" as="geometry"/>

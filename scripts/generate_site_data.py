@@ -11,6 +11,9 @@ from tei_csv_to_rdf import WIKIDATA, TYPES, WD, SCHEMA, DCT
 SOURCE_FILES_FOR_SITE = [
     ("tei", "tei_encoding.xml"),
     ("scripts", "tei_csv_to_rdf.py"),
+    ("xslt", "tei_to_html.xsl"),
+    ("xslt", "transform.py"),
+    ("turtle", "ninja_merged.ttl"),
 ]
 
 NAME_PROP = SCHEMA.name

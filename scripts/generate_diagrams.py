@@ -94,7 +94,24 @@ def render_node(cell, geom):
     return shape + "".join(text_parts)
 
 
-def render_edge(cell, node_geom, loop_index=0):
+def box_boundary_point(cx, cy, hw, hh, dx, dy):
+    """Point on a (hw*2, hh*2) box's edge, centered at (cx, cy), in the
+    direction (dx, dy) from its center."""
+    if dx == 0 and dy == 0:
+        return cx, cy
+    scale = float("inf")
+    if dx != 0:
+        scale = min(scale, hw / abs(dx))
+    if dy != 0:
+        scale = min(scale, hh / abs(dy))
+    return cx + dx * scale, cy + dy * scale
+
+
+def marker_id(kind, color):
+    return f"arrow-{kind}-{color.lstrip('#')}"
+
+
+def render_edge(cell, node_geom, markers, loop_index=0):
     source, target = cell.get("source"), cell.get("target")
     if source not in node_geom or target not in node_geom:
         return ""
@@ -104,7 +121,9 @@ def render_edge(cell, node_geom, loop_index=0):
     stroke = style.get("strokeColor", "#666666")
     font_color = style.get("fontColor", "#666666")
     font_size = float(style.get("fontSize", "16"))
-    marker = "arrow-open" if style.get("endArrow") == "open" else "arrow-block"
+    kind = "open" if style.get("endArrow") == "open" else "block"
+    marker = marker_id(kind, stroke)
+    markers[(kind, stroke)] = True
 
     if source == target:
         # Straight source-center-to-target-center geometry collapses to a
@@ -125,8 +144,15 @@ def render_edge(cell, node_geom, loop_index=0):
         mx, my = x_edge + loop_r, (y1 + y2) / 2
     else:
         tx, ty, tw, th = node_geom[target]
-        x1, y1 = sx + sw / 2, sy + sh / 2
-        x2, y2 = tx + tw / 2, ty + th / 2
+        cx1, cy1 = sx + sw / 2, sy + sh / 2
+        cx2, cy2 = tx + tw / 2, ty + th / 2
+        dx, dy = cx2 - cx1, cy2 - cy1
+        # Clip each end to its own box's boundary instead of its center —
+        # nodes paint over edges (drawn after them), so a marker sitting at
+        # a center point was rendering completely hidden underneath the
+        # target box's own fill, not just hard to see.
+        x1, y1 = box_boundary_point(cx1, cy1, sw / 2, sh / 2, dx, dy)
+        x2, y2 = box_boundary_point(cx2, cy2, tw / 2, th / 2, -dx, -dy)
         line = (f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
                 f'stroke="{stroke}" stroke-width="1.5" marker-end="url(#{marker})"/>')
         mx, my = (x1 + x2) / 2, (y1 + y2) / 2
@@ -152,14 +178,27 @@ def render_edge(cell, node_geom, loop_index=0):
     return line + rect + text
 
 
-ARROW_DEFS = '''<defs>
-  <marker id="arrow-block" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
-  </marker>
-  <marker id="arrow-open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M1,1 L9,5 L1,9" fill="none" stroke="#82b366" stroke-width="1.6"/>
-  </marker>
-</defs>'''
+def build_arrow_defs(markers):
+    """One marker per (kind, color) actually used, colored to match its own
+    edge's stroke — a single fixed marker color was invisible against edge
+    colors it didn't match, especially on the dark theoretical model."""
+    parts = ["<defs>"]
+    for kind, color in markers:
+        mid = marker_id(kind, color)
+        if kind == "open":
+            parts.append(
+                f'<marker id="{mid}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" '
+                f'markerHeight="11" orient="auto-start-reverse">'
+                f'<path d="M1,1 L9,5 L1,9" fill="none" stroke="{color}" stroke-width="1.6"/></marker>'
+            )
+        else:
+            parts.append(
+                f'<marker id="{mid}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" '
+                f'markerHeight="11" orient="auto-start-reverse">'
+                f'<path d="M0,0 L10,5 L0,10 z" fill="{color}"/></marker>'
+            )
+    parts.append("</defs>")
+    return "".join(parts)
 
 
 def convert(drawio_path, title, bg):
@@ -184,6 +223,7 @@ def convert(drawio_path, title, bg):
 
     node_svg = [render_node(cell, geom) for cell, geom in vertex_cells]
     loop_counts = {}
+    markers = {}
     edge_svg = []
     for cell in edge_cells:
         source = cell.get("source")
@@ -191,13 +231,13 @@ def convert(drawio_path, title, bg):
         if source == cell.get("target"):
             loop_index = loop_counts.get(source, 0)
             loop_counts[source] = loop_index + 1
-        edge_svg.append(render_edge(cell, node_geom, loop_index))
+        edge_svg.append(render_edge(cell, node_geom, markers, loop_index))
 
     max_x = max((x + w for x, y, w, h in node_geom.values()), default=800)
     max_y = max((y + h for x, y, w, h in node_geom.values()), default=800)
     width, height = int(max_x) + 40, int(max_y) + 40
 
-    inner = ARROW_DEFS + "".join(edge_svg) + "".join(node_svg)
+    inner = build_arrow_defs(markers) + "".join(edge_svg) + "".join(node_svg)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
             f'font-family="{FONT}" role="img" aria-label="{esc(title)}">'
             f'<rect width="{width}" height="{height}" fill="{bg}"/>{inner}</svg>')

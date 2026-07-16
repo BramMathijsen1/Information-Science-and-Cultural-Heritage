@@ -123,3 +123,6 @@ fetch("data/graph.json")
 
 loadCodeBlock("code-tei", "assets/tei_encoding.xml");
 loadCodeBlock("code-script", "assets/tei_csv_to_rdf.py");
+loadCodeBlock("code-turtle", "assets/ninja_merged.ttl");
+loadCodeBlock("code-xsl", "assets/tei_to_html.xsl");
+loadCodeBlock("code-transform", "assets/transform.py");
