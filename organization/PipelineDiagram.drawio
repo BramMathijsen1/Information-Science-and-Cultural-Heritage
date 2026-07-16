@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram name="Pipeline" id="ninja-pipeline-1">
+        <mxGraphModel dx="5050" dy="3710" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="tei" value="tei/&lt;br&gt;tei_encoding.xml" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="-2" y="-36" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="csv" value="csv/*.csv" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="118" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="drawio_in" value="organization/&lt;br&gt;*.drawio" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry y="567" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="xsl_in" value="xslt/&lt;br&gt;tei_to_html.xsl" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="-13" y="380" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" value="tei_csv_to_rdf.py" style="rounded=0;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="447" y="-33" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" value="generate_diagrams.py" style="rounded=0;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="464" y="567" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" value="transform.py" style="rounded=0;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="-7" y="240" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="turtle" value="turtle/&lt;br&gt;ninja_merged.ttl" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="883" y="-33" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="svgs" value="docs/assets/&lt;br&gt;*.svg" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="883" y="576" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="html_out" value="docs/&lt;br&gt;tei_encoding.html" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="247" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" value="generate_site_data.py" style="rounded=0;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1320" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" value="generate_rdf_graph_diagram.py" style="rounded=0;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="160" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="graphjson" value="docs/data/&lt;br&gt;graph.json" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1760" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdfgraph" value="docs/assets/&lt;br&gt;rdf-graph.svg" style="rounded=0;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=20;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1771" y="164" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="tei" target="s1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="csv" target="s1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="s1" target="turtle" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="turtle" target="s4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="turtle" target="s5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="s4" target="graphjson" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="drawio_in" target="s2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="s2" target="svgs" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="tei" target="s3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="xsl_in" target="s3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;strokeWidth=3;" parent="1" source="s3" target="html_out" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="" style="endArrow=block;html=1;strokeColor=#7a7a85;fontColor=#c9a860;fontSize=16;labelBackgroundColor=#0d0d10;strokeWidth=3;" parent="1" source="s5" target="rdfgraph" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

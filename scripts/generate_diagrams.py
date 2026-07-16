@@ -14,6 +14,8 @@ DIAGRAMS = [
      "Theoretical model: Hattori Hanzō and the entities connected to him", "#0d0d10"),
     ("ConceptualModel.drawio", "conceptual-model.svg",
      "Conceptual model: classes and properties in the Ninja RDF graph", "#fbfaf7"),
+    ("PipelineDiagram.drawio", "pipeline-diagram.svg",
+     "Pipeline: how the project files feed into each script and out to the website", "#0d0d10"),
 ]
 
 
@@ -233,14 +235,20 @@ def convert(drawio_path, title, bg):
             loop_counts[source] = loop_index + 1
         edge_svg.append(render_edge(cell, node_geom, markers, loop_index))
 
+    # Boxes dragged left/above the drawio canvas's own origin (negative x/y)
+    # used to render outside a viewBox that always started at 0,0 and got
+    # silently clipped — the viewBox origin now follows the actual content.
+    min_x = min((x for x, y, w, h in node_geom.values()), default=0)
+    min_y = min((y for x, y, w, h in node_geom.values()), default=0)
     max_x = max((x + w for x, y, w, h in node_geom.values()), default=800)
     max_y = max((y + h for x, y, w, h in node_geom.values()), default=800)
-    width, height = int(max_x) + 40, int(max_y) + 40
+    vx, vy = int(min_x) - 20, int(min_y) - 20
+    width, height = int(max_x - min_x) + 40, int(max_y - min_y) + 40
 
     inner = build_arrow_defs(markers) + "".join(edge_svg) + "".join(node_svg)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vx} {vy} {width} {height}" '
             f'font-family="{FONT}" role="img" aria-label="{esc(title)}">'
-            f'<rect width="{width}" height="{height}" fill="{bg}"/>{inner}</svg>')
+            f'<rect x="{vx}" y="{vy}" width="{width}" height="{height}" fill="{bg}"/>{inner}</svg>')
 
 
 def main():

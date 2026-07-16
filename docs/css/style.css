@@ -171,7 +171,8 @@ h2.title {
    (2500-3200px+), and a narrow column shrinks their text unreadably. */
 section.block#section-theoretical,
 section.block#section-conceptual,
-section.block#section-rdf-graph {
+section.block#section-rdf-graph,
+section.block#section-source {
   max-width: 1440px;
 }
 
