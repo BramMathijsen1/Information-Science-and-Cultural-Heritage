@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Conceptual Model" id="ninja-conceptual-1">
-        <mxGraphModel dx="2700" dy="2673" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1614" dy="1603" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -253,7 +253,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="eop21" value="ninja:preservesKnowledgeOf" style="endArrow=block;endFill=1;startArrow=oval;startFill=1;startSize=10;html=1;strokeColor=#1a56db;fontColor=#1a3f8c;fontSize=22;rounded=0;labelBackgroundColor=#ffffff;fontStyle=1;strokeWidth=3;" parent="1" source="Book" target="Group" edge="1">
-                    <mxGeometry x="0.0601" y="65" relative="1" as="geometry">
+                    <mxGeometry x="0.618" relative="1" as="geometry">
                         <mxPoint x="-1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
