@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Conceptual Model" id="ninja-conceptual-1">
-        <mxGraphModel dx="3131" dy="1597" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2700" dy="2673" grid="1" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -8,16 +8,16 @@
                     <mxGeometry x="1521" y="377" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Group" value="crm:E74_Group&lt;br&gt;+ foaf:Organization&lt;br&gt;+ schema:Corporation" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2665" y="625" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2847" y="625" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Concept" value="skos:Concept" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2275" y="1110" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2262" y="1165" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Place" value="schema:Place" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="2233" y="1845" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="AdministrativeArea" value="schema:AdministrativeArea" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="2807" y="2470" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="2912" y="2371" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="LandmarksOrHistoricalBuildings" value="schema:LandmarksOrHistorical&lt;br&gt;Buildings" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="2839" y="1430" width="480" height="190" as="geometry"/>
@@ -32,13 +32,13 @@
                     <mxGeometry x="1768" y="2151" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Object" value="crm:E22_Human-&lt;br&gt;Made_Object" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="1152" y="2151" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="972" y="2050" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Book" value="schema:Book" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="681" y="1755" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="761" y="1586" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="VideoGame" value="schema:VideoGame" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="574" y="1149" width="480" height="190" as="geometry"/>
+                    <mxGeometry x="858" y="1131" width="480" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="Event" value="schema:Event" style="rounded=0;html=1;fillColor=#ffff99;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=30;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="881" y="616" width="480" height="190" as="geometry"/>
