@@ -85,8 +85,13 @@
                 <mxCell id="kunai_lit0" value="soft iron" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="2527" y="2441" width="180" height="64" as="geometry"/>
                 </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kunai_lit1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2220.0001220703125" y="2685.3333740234375" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="kunai_lit1" value="20-30 cm" style="rounded=1;html=1;fillColor=#241b0a;strokeColor=#c9a860;fontColor=#f0d9a0;fontSize=20;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="2101" y="2667" width="180" height="64" as="geometry"/>
+                    <mxGeometry x="2110" y="2607" width="180" height="64" as="geometry"/>
                 </mxCell>
                 <mxCell id="kunai_auth" value="Wikidata Q860340&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="2491" y="2575" width="220" height="100" as="geometry"/>
@@ -128,7 +133,7 @@
                     <mxGeometry x="1235" y="2230" width="180" height="64" as="geometry"/>
                 </mxCell>
                 <mxCell id="mizugumo_auth" value="Wikidata Q6884757&lt;br&gt;DBpedia" style="rounded=1;html=1;fillColor=#0f1c24;strokeColor=#5a92b0;fontColor=#bcdcec;fontSize=18;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=6;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="743" y="2042" width="220" height="100" as="geometry"/>
+                    <mxGeometry x="671" y="2071" width="220" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="ninjutsu" value="Ninjutsu" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
                     <mxGeometry x="1195" y="1717" width="260" height="110" as="geometry"/>
@@ -164,7 +169,7 @@
                     <mxGeometry x="2266" y="1988" width="220" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="tokugawa_ieyasu" value="Tokugawa Ieyasu" style="rounded=1;html=1;fillColor=#1c1c22;strokeColor=#c9a860;fontColor=#eee6d0;fontStyle=1;fontSize=29;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;gradientColor=#2a2a33;gradientDirection=radial;" parent="1" vertex="1">
-                    <mxGeometry x="1005" y="1363" width="220" height="90" as="geometry"/>
+                    <mxGeometry x="989" y="1360" width="220" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="tokugawa_ieyasu_type" value="person" style="rounded=1;html=1;fillColor=#2b1015;strokeColor=#a8324a;fontColor=#e8b8c2;fontSize=22;labelBackgroundColor=none;whiteSpace=wrap;strokeWidth=8;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="756" y="1197" width="150" height="60" as="geometry"/>
@@ -457,7 +462,9 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="e69" value="had participant" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="udono_nagateru" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="0.537" y="-47" relative="1" as="geometry">
+                        <mxPoint x="1" y="1" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="e70" value="location" style="endArrow=block;html=1;rounded=1;strokeColor=#7a7a85;fontSize=23;fontColor=#c9a860;labelBackgroundColor=none;strokeWidth=8;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;labelBorderColor=none;textShadow=0;" parent="1" source="kaminogo_siege" target="kaminogo_castle" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -501,6 +508,9 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lit_hattori_hanzo_2" target="lit_hattori_hanzo_2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="udono_nagateru" target="udono_nagateru">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
