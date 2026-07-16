@@ -199,12 +199,50 @@ section.block#section-rdf-graph {
 .diagram-wrap.native {
   max-height: 720px;
   overflow-y: auto;
+  cursor: grab;
+}
+
+.diagram-wrap.native.grabbing {
+  cursor: grabbing;
 }
 
 .diagram-wrap.native img {
+  -webkit-user-drag: none;
+  user-select: none;
   width: auto;
   max-width: none;
   min-width: 0;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.zoom-controls button {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.zoom-controls button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.zoom-controls button#rdf-zoom-reset {
+  width: auto;
+  padding: 0 10px;
+  font-size: 0.78rem;
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
 }
 
 /* ---- Subject card ---- */

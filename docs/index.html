@@ -100,8 +100,13 @@
       (Graphviz) straight from <code>turtle/ninja_merged.ttl</code> each
       time <code>main.py</code> runs. It uses both the information from the TEI file and extra information that complements the ontology stored in extra csv files.
     </p>
-    <div class="diagram-wrap native">
-      <img src="assets/rdf-graph.svg" alt="Full RDF graph: every entity and literal-valued fact in the merged Turtle output, laid out by Graphviz">
+    <div class="zoom-controls">
+      <button type="button" id="rdf-zoom-out" aria-label="Zoom out">&minus;</button>
+      <button type="button" id="rdf-zoom-reset" aria-label="Reset zoom">100%</button>
+      <button type="button" id="rdf-zoom-in" aria-label="Zoom in">+</button>
+    </div>
+    <div class="diagram-wrap native" id="rdf-graph-wrap">
+      <img src="assets/rdf-graph.svg" alt="Full RDF graph: every entity and literal-valued fact in the merged Turtle output, laid out by Graphviz" id="rdf-graph-img" draggable="false">
     </div>
   </section>
 

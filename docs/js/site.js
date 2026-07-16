@@ -125,4 +125,70 @@ loadCodeBlock("code-tei", "assets/tei_encoding.xml");
 loadCodeBlock("code-script", "assets/tei_csv_to_rdf.py");
 loadCodeBlock("code-turtle", "assets/ninja_merged.ttl");
 loadCodeBlock("code-xsl", "assets/tei_to_html.xsl");
+
+function initRdfGraphZoom() {
+  const wrap = document.getElementById("rdf-graph-wrap");
+  const img = document.getElementById("rdf-graph-img");
+  const zoomIn = document.getElementById("rdf-zoom-in");
+  const zoomOut = document.getElementById("rdf-zoom-out");
+  const zoomReset = document.getElementById("rdf-zoom-reset");
+  if (!wrap || !img) return;
+
+  let scale = 1;
+  let baseWidth = null;
+
+  function applyScale() {
+    if (!baseWidth) return;
+    img.style.width = `${baseWidth * scale}px`;
+    zoomReset.textContent = `${Math.round(scale * 100)}%`;
+  }
+
+  function setScale(next) {
+    scale = Math.min(4, Math.max(0.1, next));
+    applyScale();
+  }
+
+  function init() {
+    baseWidth = img.naturalWidth;
+    applyScale();
+  }
+  if (img.complete) init();
+  else img.addEventListener("load", init);
+
+  zoomIn.addEventListener("click", () => setScale(scale * 1.25));
+  zoomOut.addEventListener("click", () => setScale(scale * 0.8));
+  zoomReset.addEventListener("click", () => setScale(1));
+
+  wrap.addEventListener("wheel", (e) => {
+    if (!e.ctrlKey) return;
+    e.preventDefault();
+    setScale(scale * (e.deltaY < 0 ? 1.1 : 0.9));
+  }, { passive: false });
+
+  let dragging = false;
+  let startX = 0;
+  let startY = 0;
+  let startScrollLeft = 0;
+  let startScrollTop = 0;
+
+  wrap.addEventListener("mousedown", (e) => {
+    dragging = true;
+    wrap.classList.add("grabbing");
+    startX = e.clientX;
+    startY = e.clientY;
+    startScrollLeft = wrap.scrollLeft;
+    startScrollTop = wrap.scrollTop;
+  });
+  window.addEventListener("mouseup", () => {
+    dragging = false;
+    wrap.classList.remove("grabbing");
+  });
+  window.addEventListener("mousemove", (e) => {
+    if (!dragging) return;
+    wrap.scrollLeft = startScrollLeft - (e.clientX - startX);
+    wrap.scrollTop = startScrollTop - (e.clientY - startY);
+  });
+}
+
+initRdfGraphZoom();
 loadCodeBlock("code-transform", "assets/transform.py");
